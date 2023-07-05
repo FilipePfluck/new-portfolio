@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "panda codegen --watch",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "prepare": "panda codegen --watch",
+    "@radix-ui/colors": "^1.0.0",
     "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",

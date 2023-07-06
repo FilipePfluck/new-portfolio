@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "panda codegen --watch",
+    "prepare": "panda codegen",
+    "prepare:watch": "panda codegen --watch",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

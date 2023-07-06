@@ -64,7 +64,7 @@ export const Content = styled(
       mx: 'auto',
       px: '8',
       py: '32',
-      gap: { base: '4', lg: '8' },
+      gap: { base: '4', md: '8' },
       display: 'flex',
       flexDir: 'column',
     },
@@ -76,8 +76,8 @@ export const ProfilePicture = styled(
   cva({
     base: {
       rounded: '2xl',
-      w: { base: '64px', lg: '128px' },
-      h: { base: '64px', lg: '128px' },
+      w: { base: '64px', md: '128px' },
+      h: { base: '64px', md: '128px' },
       overflow: 'hidden',
     },
   }),
@@ -90,8 +90,8 @@ export const ProfileHeader = styled(
       display: 'flex',
       gap: '8',
       alignItems: 'center',
-      w: { base: 'auto', lg: '640px' },
-      py: { base: '4', lg: '8' },
+      w: { base: 'auto', md: '640px' },
+      py: { base: '4', md: '8' },
       bgImage:
         'radial-gradient( rgba(76, 195, 138, 0.08), rgba(76, 195, 138, 0.0), rgba(76, 195, 138, 0.0))',
     },
@@ -113,7 +113,7 @@ export const Name = styled(
   'h1',
   cva({
     base: {
-      fontSize: { base: '2xl', lg: '6xl' },
+      fontSize: { base: '2xl', md: '6xl' },
       color: 'green.12',
       fontWeight: '700',
       fontFamily: 'robotoMono',
@@ -121,7 +121,7 @@ export const Name = styled(
       whiteSpace: 'nowrap',
       overflow: 'hidden',
       willChange: 'width',
-      animation: { base: 'typeWritterMobile', lg: 'typewritter' },
+      animation: { base: 'typeWritterMobile', md: 'typewritter' },
     },
   }),
 )
@@ -130,7 +130,7 @@ export const Job = styled(
   'strong',
   cva({
     base: {
-      fontSize: { base: 'lg', lg: '4xl' },
+      fontSize: { base: 'lg', md: '4xl' },
       color: 'slate.11',
       fontWeight: '700',
       fontFamily: 'robotoMono',
@@ -138,7 +138,7 @@ export const Job = styled(
       whiteSpace: 'nowrap',
       overflow: 'hidden',
       willChange: 'width',
-      animation: { base: 'typewritter2Mobile', lg: 'typewritter2' },
+      animation: { base: 'typewritter2Mobile', md: 'typewritter2' },
       w: 'auto',
       display: 'flex',
     },
@@ -149,7 +149,7 @@ export const Description = styled(
   'p',
   cva({
     base: {
-      fontSize: { base: 'md', lg: 'lg' },
+      fontSize: { base: 'md', md: 'lg' },
       color: 'slate.12',
       fontFamily: 'inter',
       lineHeight: '120%',

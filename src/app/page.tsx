@@ -1,3 +1,9 @@
+import { Hero } from '@/components/composed/Hero'
+
 export default function Home() {
-  return <main>Hello panda</main>
+  return (
+    <main>
+      <Hero />
+    </main>
+  )
 }

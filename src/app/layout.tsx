@@ -1,8 +1,16 @@
 import { ReactNode } from 'react'
 import './globals.css'
-import { Inter } from 'next/font/google'
+// eslint-disable-next-line
+import { Inter, Roboto_Mono } from 'next/font/google'
+import { css } from '../../styled-system/css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const robotoMono = Roboto_Mono({
+  weight: ['400', '500', '700'],
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-roboto-mono',
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,8 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html className={`${inter.variable} ${robotoMono.variable}`} lang="en">
+      <body className={css({ bg: 'slate.1' })}>{children}</body>
     </html>
   )
 }

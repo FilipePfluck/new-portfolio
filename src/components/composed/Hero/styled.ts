@@ -17,7 +17,7 @@ export const Background = styled(
   'div',
   cva({
     base: {
-      color: 'rgba(19, 57, 41, 0.3)',
+      color: 'rgba(48, 164, 108, 0.085)',
       position: 'absolute',
       inset: '0px',
       overflow: 'hidden',

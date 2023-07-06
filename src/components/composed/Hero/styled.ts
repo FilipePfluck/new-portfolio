@@ -8,7 +8,7 @@ export const Container = styled(
       w: 'full',
       bg: 'slate.1',
       position: 'relative',
-      zIndex: '-1',
+      // zIndex: '-1',
     },
   }),
 )
@@ -21,7 +21,7 @@ export const Background = styled(
       position: 'absolute',
       inset: '0px',
       overflow: 'hidden',
-      zIndex: '-1',
+      // zIndex: '-1',
     },
   }),
 )
@@ -36,7 +36,7 @@ export const BinaryDigitsColumn = styled(
       writingMode: 'vertical-lr',
       textOrientation: 'upright',
       userSelect: 'none',
-      zIndex: '-1',
+      // zIndex: '-1',
     },
   }),
 )
@@ -67,6 +67,7 @@ export const Content = styled(
       gap: { base: '4', md: '8' },
       display: 'flex',
       flexDir: 'column',
+      zIndex: '2',
     },
   }),
 )
@@ -79,6 +80,7 @@ export const ProfilePicture = styled(
       w: { base: '64px', md: '128px' },
       h: { base: '64px', md: '128px' },
       overflow: 'hidden',
+      // zIndex: '2',
     },
   }),
 )
@@ -92,6 +94,7 @@ export const ProfileHeader = styled(
       alignItems: 'center',
       w: { base: 'auto', md: '640px' },
       py: { base: '4', md: '8' },
+      zIndex: '2',
       bgImage:
         'radial-gradient( rgba(76, 195, 138, 0.08), rgba(76, 195, 138, 0.0), rgba(76, 195, 138, 0.0))',
     },
@@ -154,6 +157,7 @@ export const Description = styled(
       fontFamily: 'inter',
       lineHeight: '120%',
       maxW: '640px',
+      zIndex: '2',
     },
   }),
 )

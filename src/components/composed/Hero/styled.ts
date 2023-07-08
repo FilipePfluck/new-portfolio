@@ -63,7 +63,7 @@ export const Content = styled(
       maxW: '1032px',
       mx: 'auto',
       px: '8',
-      py: '32',
+      py: '24',
       gap: { base: '4', md: '8' },
       display: 'flex',
       flexDir: 'column',

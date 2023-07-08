@@ -22,7 +22,8 @@ export const Overlay = styled(
       inset: '-60px',
       transition: '2s',
 
-      bgShadowColor: 'green',
+      bgImage:
+        'radial-gradient(circle, token(colors.greenLogo.2), token(colors.greenLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
 
       _blueLogoHighlighted: {
         bgImage:

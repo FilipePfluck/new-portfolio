@@ -24,14 +24,21 @@ export const Techs = () => {
             mt="auto"
             src="/cva.svg"
             alt="Class Variance Authority"
+            tech="next"
           />
           <TechColumn mt="auto">
             <Tech
               size="sm"
               src="/styledcomponents.svg"
               alt="Styled Components"
+              tech="styledComponents"
             />
-            <Tech size="sm" src="/framer-motion.svg" alt="Framer Motion" />
+            <Tech
+              size="sm"
+              src="/framer-motion.svg"
+              alt="Framer Motion"
+              tech="motion"
+            />
           </TechColumn>
 
           <TechColumn>
@@ -40,87 +47,156 @@ export const Techs = () => {
               ml="auto"
               src="/reacthookform.svg"
               alt="React Hook Form"
+              tech="graphql"
             />
-            <Tech size="md" src="/storybook.svg" alt="Storybook" />
+            <Tech
+              size="md"
+              src="/storybook.svg"
+              alt="Storybook"
+              tech="storybook"
+            />
           </TechColumn>
 
           <TechColumn>
             <TechLine>
-              <Tech size="sm" src="/cypress.svg" alt="Cypress" />
+              <Tech size="sm" src="/cypress.svg" alt="Cypress" tech="cypress" />
               <Tech
                 size="sm"
                 src="/testinglibrary.svg"
                 alt="React Testing Library"
+                tech="testingLibrary"
               />
             </TechLine>
-            <Tech size="md" src="/git.svg" alt="Git" />
+            <Tech size="md" src="/git.svg" alt="Git" tech="git" />
           </TechColumn>
 
-          <Tech size="md" mt="auto" src="/nestjs.svg" alt="NestJS" />
-          <Tech size="sm" mt="auto" src="/fastify.svg" alt="Fastify" />
+          <Tech
+            size="md"
+            mt="auto"
+            src="/nestjs.svg"
+            alt="NestJS"
+            tech="nest"
+          />
+          <Tech
+            size="sm"
+            mt="auto"
+            src="/fastify.svg"
+            alt="Fastify"
+            tech="next"
+          />
         </TechLine>
 
         {/* Mid line */}
         <TechLine>
           <TechColumn>
-            <Tech size="sm" src="/unocss.svg" alt="Uno CSS" />
-            <Tech size="sm" src="/pandacss.svg" alt="Panda CSS" />
+            <Tech size="sm" src="/unocss.svg" alt="Uno CSS" tech="unocss" />
+            <Tech size="sm" src="/pandacss.svg" alt="Panda CSS" tech="panda" />
           </TechColumn>
           <TechColumn>
-            <Tech size="md" src="/tailwind-css.svg" alt="Tailwind" />
+            <Tech
+              size="md"
+              src="/tailwind-css.svg"
+              alt="Tailwind"
+              tech="tailwind"
+            />
             <TechLine>
-              <Tech size="sm" src="/expo.svg" alt="Expo" />
-              <Tech size="sm" src="/qwik.svg" alt="Qwik" />
+              <Tech size="sm" src="/expo.svg" alt="Expo" tech="next" />
+              <Tech size="sm" src="/qwik.svg" alt="Qwik" tech="qwik" />
             </TechLine>
           </TechColumn>
-          <Tech size="lg" src="/react.svg" alt="react" />
+          <Tech size="lg" src="/react.svg" alt="react" tech="react" />
           <TechColumn>
             <TechLine>
-              <Tech size="sm" src="/jest.svg" alt="Jest" />
-              <Tech size="sm" src="/vitest.svg" alt="Vitest" />
+              <Tech size="sm" src="/jest.svg" alt="Jest" tech="jest" />
+              <Tech size="sm" src="/vitest.svg" alt="Vitest" tech="vitest" />
             </TechLine>
-            <Tech size="md" src="/typescript.svg" alt="typescript" />
+            <Tech
+              size="md"
+              src="/typescript.svg"
+              alt="typescript"
+              tech="typescript"
+            />
           </TechColumn>
           <TechColumn>
-            <Tech size="md" src="/nodejs-icon.svg" alt="NodeJS" />
+            <Tech size="md" src="/nodejs-icon.svg" alt="NodeJS" tech="node" />
             <TechLine>
-              <Tech size="sm" src="/redis.svg" alt="Redis" />
-              <Tech size="sm" src="/sequelize.svg" alt="Sequelize" />
+              <Tech size="sm" src="/redis.svg" alt="Redis" tech="redis" />
+              <Tech
+                size="sm"
+                src="/sequelize.svg"
+                alt="Sequelize"
+                tech="sequelize"
+              />
             </TechLine>
           </TechColumn>
           <TechColumn>
-            <Tech size="sm" src="/socketdotio.svg" alt="Socket.io" />
-            <Tech size="md" src="/prisma.svg" alt="Prisma" />
+            <Tech
+              size="sm"
+              src="/socketdotio.svg"
+              alt="Socket.io"
+              tech="next"
+            />
+            <Tech size="md" src="/prisma.svg" alt="Prisma" tech="prisma" />
           </TechColumn>
         </TechLine>
 
         {/* Last line */}
         <TechLine>
-          <Tech size="md" src="/react-native.svg" alt="React Native" />
-          <Tech size="lg" src="/next-js.svg" alt="Next.js" />
+          <Tech
+            size="md"
+            src="/react-native.svg"
+            alt="React Native"
+            tech="react"
+          />
+          <Tech size="lg" src="/next-js.svg" alt="Next.js" tech="next" />
           <TechColumn>
             <TechLine>
-              <Tech size="md" src="/radix-ui.svg" alt="RadixUI" />
+              <Tech size="md" src="/radix-ui.svg" alt="RadixUI" tech="radix" />
               <TechColumn>
-                <Tech size="sm" src="/stitches.svg" alt="Stitches" />
-                <Tech size="sm" src="/figma.svg" alt="Figma" />
+                <Tech
+                  size="sm"
+                  src="/stitches.svg"
+                  alt="Stitches"
+                  tech="radix"
+                />
+                <Tech size="sm" src="/figma.svg" alt="Figma" tech="figma" />
               </TechColumn>
             </TechLine>
             <TechLine>
-              <Tech size="sm" src="/reactquery.svg" alt="React Query" />
-              <Tech size="sm" src="/graphql.svg" alt="Graphql" />
-              <Tech size="sm" src="/novu.svg" alt="Novu" />
+              <Tech
+                size="sm"
+                src="/reactquery.svg"
+                alt="React Query"
+                tech="reactQuery"
+              />
+              <Tech size="sm" src="/graphql.svg" alt="Graphql" tech="graphql" />
+              <Tech size="sm" src="/novu.svg" alt="Novu" tech="novu" />
             </TechLine>
           </TechColumn>
 
           <TechLine>
             <TechColumn>
-              <Tech size="md" src="/postgresql.svg" alt="Postgres" />
-              <Tech size="sm" src="/firebase.svg" alt="Firebase" />
+              <Tech
+                size="md"
+                src="/postgresql.svg"
+                alt="Postgres"
+                tech="postgres"
+              />
+              <Tech
+                size="sm"
+                src="/firebase.svg"
+                alt="Firebase"
+                tech="firebase"
+              />
             </TechColumn>
             <TechColumn>
-              <Tech size="sm" src="/docker.svg" alt="Docker" />
-              <Tech size="sm" src="/apachekafka.svg" alt="Apache Kafka" />
+              <Tech size="sm" src="/docker.svg" alt="Docker" tech="docker" />
+              <Tech
+                size="sm"
+                src="/apachekafka.svg"
+                alt="Apache Kafka"
+                tech="next"
+              />
             </TechColumn>
           </TechLine>
         </TechLine>

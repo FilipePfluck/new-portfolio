@@ -13,21 +13,9 @@ export const Skills = () => {
     <Section type="secondary">
       <SectionTitle>I am skilled at</SectionTitle>
 
-      <Skill
-        icon={<Monitor size={24} />}
-        name="Frontend"
-        items={frontendSkills}
-      />
-      <Skill
-        icon={<HardDrives size={24} />}
-        name="Backend"
-        items={backendSkills}
-      />
-      <Skill
-        icon={<DeviceMobile size={24} />}
-        name="Mobile"
-        items={mobileSkills}
-      />
+      <Skill icon={<Monitor />} name="Frontend" items={frontendSkills} />
+      <Skill icon={<HardDrives />} name="Backend" items={backendSkills} />
+      <Skill icon={<DeviceMobile />} name="Mobile" items={mobileSkills} />
     </Section>
   )
 }

@@ -5,13 +5,17 @@ export const IconContainer = styled(
   'div',
   cva({
     base: {
-      p: '2',
+      p: { base: '1', lg: '2' },
       rounded: 'lg',
       border: '1px solid token(colors.green.9)',
       color: 'green.9',
       fontSize: 'xl',
       w: 'max-content',
       h: 'max-content',
+      '& svg': {
+        height: { base: '4', lg: '6' },
+        width: { base: '4', lg: '6' },
+      },
     },
   }),
 )
@@ -44,8 +48,8 @@ export const SkillList = styled(
     base: {
       display: 'grid',
       w: 'full',
-      gridTemplateColumns: '1fr 1fr',
-      gap: '8',
+      gridTemplateColumns: { base: '1fr', lg: '1fr 1fr' },
+      gap: { base: '4', lg: '8' },
     },
   }),
 )
@@ -57,7 +61,7 @@ export const SkillItem = styled(
       display: 'flex',
       flexDir: 'column',
       gap: '2',
-      pr: '4',
+      pr: { base: '0px', lg: '4' },
     },
   }),
 )
@@ -68,6 +72,7 @@ export const SkillItemHeading = styled(
     base: {
       display: 'flex',
       alignItems: 'center',
+      w: 'max-content',
 
       gap: '2',
     },
@@ -87,7 +92,7 @@ export const SkillName = styled(
   'strong',
   cva({
     base: {
-      fontSize: 'xl',
+      fontSize: { base: 'md', lg: 'xl' },
       color: 'slate.12',
       fontWeight: 500,
     },
@@ -98,7 +103,7 @@ export const SkillDescription = styled(
   'p',
   cva({
     base: {
-      fontSize: 'md',
+      fontSize: { base: 'sm', lg: 'md' },
       color: 'slate.11',
       fontFamily: 'inter',
       maxW: '520px',

@@ -13,35 +13,6 @@ export const Container = styled(
   }),
 )
 
-export const Tech = styled(
-  'div',
-  cva({
-    base: {
-      bg: 'slate.3',
-      rounded: '2xl',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    variants: {
-      size: {
-        sm: {
-          h: '64px',
-          w: '64px',
-        },
-        md: {
-          h: '136px',
-          w: '136px',
-        },
-        lg: {
-          h: '208px',
-          w: '208px',
-        },
-      },
-    },
-  }),
-)
-
 export const TechLine = styled(
   'div',
   cva({
@@ -70,7 +41,7 @@ export const Text = styled(
       fontSize: 'md',
       color: 'slate.11',
       fontFamily: 'inter',
-      maxW: '670px',
+      maxW: { base: '480px', lg: '670px' },
       mx: 'auto',
     },
   }),

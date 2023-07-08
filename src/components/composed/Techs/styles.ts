@@ -62,3 +62,16 @@ export const TechColumn = styled(
     },
   }),
 )
+
+export const Text = styled(
+  'p',
+  cva({
+    base: {
+      fontSize: 'md',
+      color: 'slate.11',
+      fontFamily: 'inter',
+      maxW: '670px',
+      mx: 'auto',
+    },
+  }),
+)

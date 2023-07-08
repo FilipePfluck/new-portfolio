@@ -156,7 +156,7 @@ export const Description = styled(
       color: 'slate.12',
       fontFamily: 'inter',
       lineHeight: '120%',
-      maxW: '640px',
+      maxW: '544px',
       zIndex: '2',
     },
   }),

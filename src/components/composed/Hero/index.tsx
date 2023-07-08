@@ -65,13 +65,11 @@ export const Hero = () => {
         </S.ProfileHeader>
 
         <S.Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          impedit est odio accusamus minima obcaecati doloribus, suscipit
-          beatae, quis perspiciatis ipsum cum soluta quos molestias eligendi
-          veritatis, voluptatem assumenda aperiam. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Quo, sit. Eos deserunt provident
-          voluptas impedit laboriosam veniam! Molestiae totam, error est odit
-          cupiditate sed eius saepe quos in, tenetur harum?
+          I am a young and talented software developer living in Brazil.
+          I&apos;m passionate about using my coding skills to craft amazing
+          experiences. Currently I work mostly with Typescript and React, but
+          I&apos;m very curious and always eager to learn new things. I consider
+          myself a very logical and fast learning person.
         </S.Description>
       </S.Content>
     </S.Container>

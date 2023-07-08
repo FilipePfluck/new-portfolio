@@ -1,16 +1,24 @@
 import { Section } from '@/components/primitives/Section'
 import { SectionTitle } from '@/components/primitives/SectionTitle'
 
-import { Tech, TechColumn, TechLine, Container } from './styles'
+import { Tech, TechColumn, TechLine, Container, Text } from './styles'
 import Image from 'next/image'
 
 export const Techs = () => {
   return (
     <Section>
       <SectionTitle>Techs </SectionTitle>
+      <Text>
+        Those are some of the technologies I have used, either on my previous
+        jobs or on my side projects. If you want to learn more about one of
+        those, you can click on them and a modal will open with more info. I am
+        always looking forward to learn new technologies, so don&apos;t worry if
+        I haven&apos;t used a certain tool for a job, I am not afraid of
+        learning it.
+      </Text>
       <Container>
         {/* First line */}
-        <TechLine /* transform="translateX(-20px)" */>
+        <TechLine>
           <Tech size="sm" mt="auto">
             <Image
               src="/cva.svg"
@@ -30,8 +38,8 @@ export const Techs = () => {
             </Tech>
             <Tech size="sm">
               <Image
-                src="/stitches.svg"
-                alt="Stitches"
+                src="/framer-motion.svg"
+                alt="Framer Motion"
                 width={32}
                 height={32}
               />
@@ -49,8 +57,8 @@ export const Techs = () => {
             </Tech>
             <Tech size="md">
               <Image
-                src="/framer-motion.svg"
-                alt="Framer Motion"
+                src="/storybook.svg"
+                alt="Storybook"
                 width={64}
                 height={64}
               />
@@ -77,12 +85,7 @@ export const Techs = () => {
               </Tech>
             </TechLine>
             <Tech size="md">
-              <Image
-                src="/storybook.svg"
-                alt="Storybook"
-                width={64}
-                height={64}
-              />
+              <Image src="/git.svg" alt="Git" width={64} height={64} />
             </Tech>
           </TechColumn>
 
@@ -95,7 +98,7 @@ export const Techs = () => {
         </TechLine>
 
         {/* Mid line */}
-        <TechLine /* transform="translateX(32px)" */>
+        <TechLine>
           <TechColumn>
             <Tech size="sm">
               <Image src="/unocss.svg" alt="Uno CSS" width={32} height={32} />
@@ -187,7 +190,7 @@ export const Techs = () => {
         </TechLine>
 
         {/* Last line */}
-        <TechLine /* transform="translateX(-20px)" */>
+        <TechLine>
           <Tech size="md">
             <Image
               src="/react-native.svg"
@@ -211,7 +214,12 @@ export const Techs = () => {
               </Tech>
               <TechColumn>
                 <Tech size="sm">
-                  <Image src="/git.svg" alt="Git" width={32} height={32} />
+                  <Image
+                    src="/stitches.svg"
+                    alt="Stitches"
+                    width={32}
+                    height={32}
+                  />
                 </Tech>
                 <Tech size="sm">
                   <Image src="/figma.svg" alt="Figma" width={32} height={32} />

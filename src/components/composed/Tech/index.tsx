@@ -1,14 +1,14 @@
 'use client'
 
 import Image from 'next/image'
+import type { HTMLStyledProps } from '../../../../styled-system/jsx'
+
 import * as S from './styles'
 
-interface TechProps {
+interface TechProps extends HTMLStyledProps<'button'> {
   size?: 'sm' | 'md' | 'lg'
   src: string
   alt: string
-  mt?: string
-  ml?: string
   tech?:
     | 'react'
     | 'nest'
@@ -41,9 +41,9 @@ interface TechProps {
     | 'default'
 }
 
-export const Tech = ({ alt, src, size = 'md', mt, ml, tech }: TechProps) => {
+export const Tech = ({ alt, src, size = 'md', tech, ...props }: TechProps) => {
   return (
-    <S.Tech size={size} mt={mt} ml={ml} tech={tech}>
+    <S.Tech size={size} tech={tech} {...props}>
       <S.ImageContainer size={size}>
         {/* 
           Since this is a svg, the size doesn't really matter, 

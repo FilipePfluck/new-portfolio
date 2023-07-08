@@ -59,6 +59,38 @@ const tokens = defineTokens({
       11: { value: blackA.blackA11 },
       12: { value: blackA.blackA12 },
     },
+    blueLogo: {
+      1: { value: 'rgba(96, 218, 251, 0.02)' },
+      2: { value: 'rgba(96, 218, 251, 0.04)' },
+    },
+    purpleLogo: {
+      1: { value: 'rgba(171, 127, 243, 0.02)' },
+      2: { value: 'rgba(171, 127, 243, 0.04)' },
+    },
+    pinkLogo: {
+      1: { value: 'rgba(216, 49, 161, 0.02)' },
+      2: { value: 'rgba(216, 49, 161, 0.04)' },
+    },
+    redLogo: {
+      1: { value: 'rgba(223, 36, 77, 0.02)' },
+      2: { value: 'rgba(223, 36, 77, 0.04)' },
+    },
+    orangeLogo: {
+      1: { value: 'rgba(227, 77, 47, 0.02)' },
+      2: { value: 'rgba(227, 77, 47, 0.04)' },
+    },
+    yellowLogo: {
+      1: { value: 'rgba(246, 228, 87, 0.02)' },
+      2: { value: 'rgba(246, 228, 87, 0.04)' },
+    },
+    greenLogo: {
+      1: { value: 'rgba(102, 161, 97, 0.02)' },
+      2: { value: 'rgba(102, 161, 97, 0.04)' },
+    },
+    whiteLogo: {
+      1: { value: 'rgba(256, 256, 256, 0.02)' },
+      2: { value: 'rgba(256, 256, 256, 0.04)' },
+    },
   },
 })
 
@@ -173,12 +205,45 @@ export default defineConfig({
           }
         },
       },
+      bgShadowColor: {
+        values: {
+          blue: 'radial-gradient(circle, token(colors.blueLogo.2), token(colors.blueLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+          purple:
+            'radial-gradient(circle, token(colors.purpleLogo.2), token(colors.purpleLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+          pink: 'radial-gradient(circle, token(colors.pinkLogo.2), token(colors.pinkLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+          red: 'radial-gradient(circle, token(colors.redLogo.2), token(colors.redLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+          orange:
+            'radial-gradient(circle, token(colors.orangeLogo.2), token(colors.orangeLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+          yellow:
+            'radial-gradient(circle, token(colors.yellowLogo.2), token(colors.yellowLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+          green:
+            'radial-gradient(circle, token(colors.greenLogo.2), token(colors.greenLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+          white:
+            'radial-gradient(circle, token(colors.whiteLogo.2), token(colors.whiteLogo.1), rgba(21, 23, 24, 0), rgba(21, 23, 24, 0) )',
+        },
+        transform(value: string) {
+          return {
+            bgImage: value,
+          }
+        },
+      },
     },
   },
 
   conditions: {
     extend: {
       highlightedLogo: '&:hover img, &:focus-visible img',
+      blueLogoHighlighted: '.group:has(.blueLogo:hover, .blueLogo:focus) &',
+      purpleLogoHighlighted:
+        '.group:has(.purpleLogo:hover, .purpleLogo:focus) &',
+      pinkLogoHighlighted: '.group:has(.pinkLogo:hover, .pinkLogo:focus) &',
+      redLogoHighlighted: '.group:has(.redLogo:hover, .redLogo:focus) &',
+      orangeLogoHighlighted:
+        '.group:has(.orangeLogo:hover, .orangeLogo:focus) &',
+      yellowLogoHighlighted:
+        '.group:has(.yellowLogo:hover, .yellowLogo:focus) &',
+      greenLogoHighlighted: '.group:has(.greenLogo:hover, .greenLogo:focus) &',
+      whiteLogoHighlighted: '.group:has(.whiteLogo:hover, .whiteLogo:focus) &',
     },
   },
 

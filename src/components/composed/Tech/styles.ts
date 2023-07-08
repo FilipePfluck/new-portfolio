@@ -11,6 +11,8 @@ export const Tech = styled(
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      position: 'relative',
+      zIndex: 5,
     },
     variants: {
       size: {

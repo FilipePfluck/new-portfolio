@@ -176,6 +176,12 @@ export default defineConfig({
     },
   },
 
+  conditions: {
+    extend: {
+      highlightedLogo: '&:hover img, &:focus-visible img',
+    },
+  },
+
   globalCss: defineGlobalStyles({
     button: {
       cursor: 'pointer',

@@ -30,142 +30,142 @@ export const Tech = styled(
       tech: {
         default: {},
         react: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'react',
           },
         },
         nest: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'nest',
           },
         },
         storybook: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'storybook',
           },
         },
         git: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'git',
           },
         },
         node: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'node',
           },
         },
         typescript: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'typescript',
           },
         },
         prisma: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'prisma',
           },
         },
         postgres: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'postgres',
           },
         },
         tailwind: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'tailwind',
           },
         },
         next: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'next',
           },
         },
         radix: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'radix',
           },
         },
         panda: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'panda',
           },
         },
         unocss: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'unocss',
           },
         },
         motion: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'motion',
           },
         },
         qwik: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'qwik',
           },
         },
         redis: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'redis',
           },
         },
         docker: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'docker',
           },
         },
         firebase: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'firebase',
           },
         },
         sequelize: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'sequelize',
           },
         },
         testingLibrary: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'testingLibrary',
           },
         },
         reactQuery: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'reactQuery',
           },
         },
         graphql: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'graphql',
           },
         },
         novu: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'novu',
           },
         },
         figma: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'figma',
           },
         },
         cypress: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'cypress',
           },
         },
         styledComponents: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'styledComponents',
           },
         },
         jest: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'jest',
           },
         },
         vitest: {
-          '&:hover img': {
+          _highlightedLogo: {
             colorFilter: 'vitest',
           },
         },

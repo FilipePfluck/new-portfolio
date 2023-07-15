@@ -15,6 +15,8 @@ const tokens = defineTokens({
     typewritter2: { value: '2.6s typewritter2 steps(13)' },
     typeWritterMobile: { value: '1.3s typewritterMobile steps(13)' },
     typewritter2Mobile: { value: '2.6s typewritter2Mobile steps(13)' },
+    fadeIn: { value: '0.4s fadeIn' },
+    fadeOut: { value: '0.4s fadeOut' },
   },
   colors: {
     slate: {
@@ -122,6 +124,14 @@ export default defineConfig({
           '0%': { width: '0px' },
           '50%': { width: '0px' },
           '100%': { width: '160px' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
         },
       },
     },
@@ -232,7 +242,8 @@ export default defineConfig({
 
   conditions: {
     extend: {
-      highlightedLogo: '&:hover img, &:focus-visible img',
+      highlightedLogo:
+        '&:hover img, &:focus-visible img, &[data-state="open"] img',
       blueLogoHighlighted: '.group:has(.blueLogo:hover, .blueLogo:focus) &',
       purpleLogoHighlighted:
         '.group:has(.purpleLogo:hover, .purpleLogo:focus) &',
@@ -244,6 +255,9 @@ export default defineConfig({
         '.group:has(.yellowLogo:hover, .yellowLogo:focus) &',
       greenLogoHighlighted: '.group:has(.greenLogo:hover, .greenLogo:focus) &',
       whiteLogoHighlighted: '.group:has(.whiteLogo:hover, .whiteLogo:focus) &',
+
+      dataOpen: '&[data-state="open"]',
+      dataClosed: '&[data-state="closed"]',
     },
   },
 

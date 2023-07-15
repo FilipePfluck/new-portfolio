@@ -1,10 +1,18 @@
+'use client'
+
 import { Section } from '@/components/primitives/Section'
 import { SectionTitle } from '@/components/primitives/SectionTitle'
 import { Tech } from '@/components/composed/Tech'
 
 import { TechColumn, TechLine, Container, Text, Overlay } from './styles'
+import { useState } from 'react'
+import { AnimatedModal } from '@/components/primitives/AnimatedModal'
+
+import { techs } from './data'
 
 export const Techs = () => {
+  const [selectedTech, setSelectedTech] = useState<string | null>(null)
+
   return (
     <Section>
       <SectionTitle>Techs </SectionTitle>
@@ -18,311 +26,182 @@ export const Techs = () => {
       </Text>
       <Container className="group">
         <Overlay />
-
         {/* First line */}
         <TechLine>
-          <Tech
-            size="sm"
-            mt="auto"
-            src="/cva.svg"
-            alt="Class Variance Authority"
-            tech="next"
-            className="whiteLogo"
-          />
+          <Tech data={techs.cva} onClick={() => setSelectedTech('cva')} />
           <TechColumn mt="auto">
             <Tech
-              size="sm"
-              src="/styledcomponents.svg"
-              alt="Styled Components"
-              tech="styledComponents"
-              className="pinkLogo"
+              data={techs.styledComponents}
+              onClick={() => setSelectedTech('styledComponents')}
             />
             <Tech
-              size="sm"
-              src="/framer-motion.svg"
-              alt="Framer Motion"
-              tech="motion"
-              className="pinkLogo"
+              data={techs.framerMotion}
+              data-open={selectedTech === 'framerMotion'}
+              onClick={() => setSelectedTech('framerMotion')}
             />
           </TechColumn>
 
           <TechColumn>
             <Tech
-              size="sm"
-              ml="auto"
-              src="/reacthookform.svg"
-              alt="React Hook Form"
-              tech="graphql"
-              className="pinkLogo"
+              data={techs.reactHookForm}
+              onClick={() => setSelectedTech('reactHookForm')}
             />
             <Tech
-              size="md"
-              src="/storybook.svg"
-              alt="Storybook"
-              tech="storybook"
-              className="pinkLogo"
+              data={techs.storybook}
+              onClick={() => setSelectedTech('storybook')}
             />
           </TechColumn>
 
           <TechColumn>
             <TechLine>
               <Tech
-                size="sm"
-                src="/cypress.svg"
-                alt="Cypress"
-                tech="cypress"
-                className="greenLogo"
+                data={techs.cypress}
+                onClick={() => setSelectedTech('cypress')}
               />
               <Tech
-                size="sm"
-                src="/testinglibrary.svg"
-                alt="React Testing Library"
-                tech="testingLibrary"
-                className="redLogo"
+                data={techs.reactTestingLibrary}
+                onClick={() => setSelectedTech('reactTestingLibrary')}
               />
             </TechLine>
-            <Tech
-              size="md"
-              src="/git.svg"
-              alt="Git"
-              tech="git"
-              className="orangeLogo"
-            />
+            <Tech data={techs.git} onClick={() => setSelectedTech('git')} />
           </TechColumn>
 
+          <Tech data={techs.nest} onClick={() => setSelectedTech('nest')} />
           <Tech
-            size="md"
-            mt="auto"
-            src="/nestjs.svg"
-            alt="NestJS"
-            tech="nest"
-            className="redLogo"
-          />
-          <Tech
-            size="sm"
-            mt="auto"
-            src="/fastify.svg"
-            alt="Fastify"
-            tech="next"
-            className="whiteLogo"
+            data={techs.fastify}
+            onClick={() => setSelectedTech('fastify')}
           />
         </TechLine>
-
         {/* Mid line */}
         <TechLine>
           <TechColumn>
             <Tech
-              size="sm"
-              src="/unocss.svg"
-              alt="Uno CSS"
-              tech="unocss"
-              className="whiteLogo"
+              data={techs.unocss}
+              onClick={() => setSelectedTech('unocss')}
             />
             <Tech
-              size="sm"
-              src="/pandacss.svg"
-              alt="Panda CSS"
-              tech="panda"
-              className="yellowLogo"
+              data={techs.pandacss}
+              onClick={() => setSelectedTech('pandacss')}
             />
           </TechColumn>
           <TechColumn>
             <Tech
-              size="md"
-              src="/tailwind-css.svg"
-              alt="Tailwind"
-              tech="tailwind"
-              className="blueLogo"
+              data={techs.tailwindcss}
+              onClick={() => setSelectedTech('tailwindcss')}
             />
             <TechLine>
-              <Tech size="sm" src="/expo.svg" alt="Expo" tech="next" />
-              <Tech
-                size="sm"
-                src="/qwik.svg"
-                alt="Qwik"
-                tech="qwik"
-                className="purpleLogo"
-              />
+              <Tech data={techs.expo} onClick={() => setSelectedTech('expo')} />
+              <Tech data={techs.qwik} onClick={() => setSelectedTech('qwik')} />
             </TechLine>
           </TechColumn>
-          <Tech
-            size="lg"
-            src="/react.svg"
-            alt="react"
-            tech="react"
-            className="blueLogo"
-          />
+          <Tech data={techs.react} onClick={() => setSelectedTech('react')} />
           <TechColumn>
             <TechLine>
+              <Tech data={techs.jest} onClick={() => setSelectedTech('jest')} />
               <Tech
-                size="sm"
-                src="/jest.svg"
-                alt="Jest"
-                tech="jest"
-                className="pinkLogo"
-              />
-              <Tech
-                size="sm"
-                src="/vitest.svg"
-                alt="Vitest"
-                tech="vitest"
-                className="greenLogo"
+                data={techs.vitest}
+                onClick={() => setSelectedTech('vitest')}
               />
             </TechLine>
             <Tech
-              size="md"
-              src="/typescript.svg"
-              alt="typescript"
-              tech="typescript"
-              className="blueLogo"
+              data={techs.typescript}
+              onClick={() => setSelectedTech('typescript')}
             />
           </TechColumn>
           <TechColumn>
             <Tech
-              size="md"
-              src="/nodejs-icon.svg"
-              alt="NodeJS"
-              tech="node"
-              className="greenLogo"
+              data={techs.nodejs}
+              onClick={() => setSelectedTech('nodejs')}
             />
             <TechLine>
               <Tech
-                size="sm"
-                src="/redis.svg"
-                alt="Redis"
-                tech="redis"
-                className="redLogo"
+                data={techs.redis}
+                onClick={() => setSelectedTech('redis')}
               />
               <Tech
-                size="sm"
-                src="/sequelize.svg"
-                alt="Sequelize"
-                tech="sequelize"
-                className="blueLogo"
+                data={techs.sequelize}
+                onClick={() => setSelectedTech('sequelize')}
               />
             </TechLine>
           </TechColumn>
           <TechColumn>
             <Tech
-              size="sm"
-              src="/socketdotio.svg"
-              alt="Socket.io"
-              tech="next"
-              className="whiteLogo"
+              data={techs.socketio}
+              onClick={() => setSelectedTech('socketio')}
             />
             <Tech
-              size="md"
-              src="/prisma.svg"
-              alt="Prisma"
-              tech="prisma"
-              className="blueLogo"
+              data={techs.prisma}
+              onClick={() => setSelectedTech('prisma')}
             />
           </TechColumn>
         </TechLine>
-
         {/* Last line */}
         <TechLine>
           <Tech
-            size="md"
-            src="/react-native.svg"
-            alt="React Native"
-            tech="react"
-            className="blueLogo"
+            data={techs.reactNative}
+            onClick={() => setSelectedTech('reactNative')}
           />
-          <Tech
-            size="lg"
-            src="/next-js.svg"
-            alt="Next.js"
-            tech="next"
-            className="whiteLogo"
-          />
+          <Tech data={techs.nextJs} onClick={() => setSelectedTech('nextJs')} />
           <TechColumn>
             <TechLine>
               <Tech
-                size="md"
-                src="/radix-ui.svg"
-                alt="RadixUI"
-                tech="radix"
-                className="whiteLogo"
+                data={techs.radixui}
+                onClick={() => setSelectedTech('radixui')}
               />
               <TechColumn>
                 <Tech
-                  size="sm"
-                  src="/stitches.svg"
-                  alt="Stitches"
-                  tech="radix"
-                  className="whiteLogo"
+                  data={techs.stitches}
+                  onClick={() => setSelectedTech('stitches')}
                 />
                 <Tech
-                  size="sm"
-                  src="/figma.svg"
-                  alt="Figma"
-                  tech="figma"
-                  className="redLogo"
+                  data={techs.figma}
+                  onClick={() => setSelectedTech('figma')}
                 />
               </TechColumn>
             </TechLine>
             <TechLine>
               <Tech
-                size="sm"
-                src="/reactquery.svg"
-                alt="React Query"
-                tech="reactQuery"
-                className="redLogo"
+                data={techs.reactQuery}
+                onClick={() => setSelectedTech('reactQuery')}
               />
               <Tech
-                size="sm"
-                src="/graphql.svg"
-                alt="Graphql"
-                tech="graphql"
-                className="pinkLogo"
+                data={techs.graphql}
+                onClick={() => setSelectedTech('graphql')}
               />
-              <Tech
-                size="sm"
-                src="/novu.svg"
-                alt="Novu"
-                tech="novu"
-                className="redLogo"
-              />
+              <Tech data={techs.novu} onClick={() => setSelectedTech('novu')} />
             </TechLine>
           </TechColumn>
-
           <TechLine>
             <TechColumn>
               <Tech
-                size="md"
-                src="/postgresql.svg"
-                alt="Postgres"
-                tech="postgres"
-                className="blueLogo"
+                data={techs.postgresql}
+                onClick={() => setSelectedTech('postgresql')}
               />
               <Tech
-                size="sm"
-                src="/firebase.svg"
-                alt="Firebase"
-                tech="firebase"
-                className="yellowLogo"
+                data={techs.firebase}
+                onClick={() => setSelectedTech('firebase')}
               />
             </TechColumn>
             <TechColumn>
               <Tech
-                size="sm"
-                src="/docker.svg"
-                alt="Docker"
-                tech="docker"
-                className="blueLogo"
+                data={techs.docker}
+                onClick={() => setSelectedTech('docker')}
               />
               <Tech
-                size="sm"
-                src="/apachekafka.svg"
-                alt="Apache Kafka"
-                tech="next"
-                className="whiteLogo"
+                data={techs.kafka}
+                onClick={() => setSelectedTech('kafka')}
               />
             </TechColumn>
           </TechLine>
         </TechLine>
       </Container>
+      {selectedTech && (
+        <AnimatedModal
+          items={techs}
+          selectedId={selectedTech}
+          onClose={() => setSelectedTech(null)}
+        />
+      )}
     </Section>
   )
 }

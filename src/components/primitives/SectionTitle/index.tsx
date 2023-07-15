@@ -6,7 +6,8 @@ export const SectionTitle = styled(
   cva({
     base: {
       display: 'flex',
-      mx: 'auto',
+      ml: 'auto',
+      mr: 'auto',
       w: 'max-content',
       fontSize: { base: 'xl', md: '4xl' },
       pb: '2',

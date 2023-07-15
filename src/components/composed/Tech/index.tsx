@@ -1,57 +1,52 @@
 'use client'
 
-import Image from 'next/image'
+import { motion } from 'framer-motion'
 import type { HTMLStyledProps } from '../../../../styled-system/jsx'
 
 import * as S from './styles'
+import { TechColors } from './types'
+import { css, cx } from '@/styled-system/css'
 
-interface TechProps extends HTMLStyledProps<'button'> {
-  size?: 'sm' | 'md' | 'lg'
+interface Data {
+  id: string
+  name: string
   src: string
-  alt: string
-  tech?:
-    | 'react'
-    | 'nest'
-    | 'storybook'
-    | 'git'
-    | 'node'
-    | 'typescript'
-    | 'prisma'
-    | 'postgres'
-    | 'tailwind'
-    | 'next'
-    | 'radix'
-    | 'panda'
-    | 'unocss'
-    | 'motion'
-    | 'qwik'
-    | 'redis'
-    | 'docker'
-    | 'firebase'
-    | 'sequelize'
-    | 'testingLibrary'
-    | 'reactQuery'
-    | 'graphql'
-    | 'novu'
-    | 'figma'
-    | 'cypress'
-    | 'styledComponents'
-    | 'jest'
-    | 'vitest'
-    | 'default'
+  size: 'sm' | 'md' | 'lg'
+  techColor: TechColors
+  bgColor: string
 }
 
-export const Tech = ({ alt, src, size = 'md', tech, ...props }: TechProps) => {
+interface TechProps extends HTMLStyledProps<'button'> {
+  data: Data
+}
+
+export const Tech = ({ data, ...props }: TechProps) => {
+  const { bgColor, name, size, src, techColor, id, ...restData } = data
+
   return (
-    <S.Tech size={size} tech={tech} {...props}>
-      <S.ImageContainer size={size}>
-        {/* 
-          Since this is a svg, the size doesn't really matter, 
-          I'm just passing it because it's required. 
-          The actual size will be handled by the ImageContainer 
-        */}
-        <Image src={src} alt={alt} width={128} height={128} />
-      </S.ImageContainer>
-    </S.Tech>
+    // @ts-ignore
+    <motion.button
+      layout
+      layoutId={`container-${id}`}
+      className={cx(
+        bgColor,
+        S.techStyles({ tech: techColor, size }),
+        css({ ...restData }),
+      )}
+      {...props}
+      transition={{
+        duration: 0.1,
+      }}
+    >
+      <motion.img
+        className={S.imageStyles({ size })}
+        transition={{
+          duration: 0.1,
+        }}
+        layoutId={`image-${id}`}
+        src={src}
+        alt={name}
+      />
+    </motion.button>
   )
 }

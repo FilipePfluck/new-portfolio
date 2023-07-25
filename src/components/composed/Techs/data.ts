@@ -2,7 +2,7 @@ export const techs = {
   cva: {
     id: 'cva',
     name: 'Class Variance Authority',
-    src: '/cva.svg',
+    src: 'tech/cva.svg',
     size: 'sm',
     techColor: 'next',
     bgColor: 'whiteLogo',
@@ -11,7 +11,7 @@ export const techs = {
   styledComponents: {
     id: 'styledComponents',
     name: 'Styled Components',
-    src: '/styledcomponents.svg',
+    src: 'tech/styledcomponents.svg',
     size: 'sm',
     techColor: 'styledComponents',
     bgColor: 'pinkLogo',
@@ -19,7 +19,7 @@ export const techs = {
   framerMotion: {
     id: 'framerMotion',
     name: 'Framer Motion',
-    src: '/framer-motion.svg',
+    src: 'tech/framer-motion.svg',
     size: 'sm',
     techColor: 'motion',
     bgColor: 'pinkLogo',
@@ -27,7 +27,7 @@ export const techs = {
   reactHookForm: {
     id: 'reactHookForm',
     name: 'React Hook Form',
-    src: '/reacthookform.svg',
+    src: 'tech/reacthookform.svg',
     size: 'sm',
     techColor: 'graphql',
     bgColor: 'pinkLogo',
@@ -36,7 +36,7 @@ export const techs = {
   storybook: {
     id: 'storybook',
     name: 'Storybook',
-    src: '/storybook.svg',
+    src: 'tech/storybook.svg',
     size: 'md',
     techColor: 'storybook',
     bgColor: 'pinkLogo',
@@ -44,7 +44,7 @@ export const techs = {
   cypress: {
     id: 'cypress',
     name: 'Cypress',
-    src: '/cypress.svg',
+    src: 'tech/cypress.svg',
     size: 'sm',
     techColor: 'cypress',
     bgColor: 'greenLogo',
@@ -52,7 +52,7 @@ export const techs = {
   reactTestingLibrary: {
     id: 'reactTestingLibrary',
     name: 'React Testing Library',
-    src: '/testinglibrary.svg',
+    src: 'tech/testinglibrary.svg',
     size: 'sm',
     techColor: 'testingLibrary',
     bgColor: 'redLogo',
@@ -60,7 +60,7 @@ export const techs = {
   git: {
     id: 'git',
     name: 'Git',
-    src: '/git.svg',
+    src: 'tech/git.svg',
     size: 'md',
     techColor: 'git',
     bgColor: 'orangeLogo',
@@ -68,7 +68,7 @@ export const techs = {
   nest: {
     id: 'nest',
     name: 'Nest',
-    src: '/nestjs.svg',
+    src: 'tech/nestjs.svg',
     size: 'md',
     techColor: 'nest',
     bgColor: 'redLogo',
@@ -77,7 +77,7 @@ export const techs = {
   fastify: {
     id: 'fastify',
     name: 'Fastify',
-    src: '/fastify.svg',
+    src: 'tech/fastify.svg',
     size: 'sm',
     techColor: 'next',
     bgColor: 'whiteLogo',
@@ -87,7 +87,7 @@ export const techs = {
   unocss: {
     id: 'unocss',
     name: 'Uno CSS',
-    src: '/unocss.svg',
+    src: 'tech/unocss.svg',
     size: 'sm',
     techColor: 'unocss',
     bgColor: 'whiteLogo',
@@ -95,7 +95,7 @@ export const techs = {
   pandacss: {
     id: 'pandacss',
     name: 'Panda CSS',
-    src: '/pandacss.svg',
+    src: 'tech/pandacss.svg',
     size: 'sm',
     techColor: 'panda',
     bgColor: 'yellowLogo',
@@ -103,7 +103,7 @@ export const techs = {
   tailwindcss: {
     id: 'tailwindcss',
     name: 'Tailwind CSS',
-    src: '/tailwind-css.svg',
+    src: 'tech/tailwind-css.svg',
     size: 'md',
     techColor: 'tailwind',
     bgColor: 'blueLogo',
@@ -111,7 +111,7 @@ export const techs = {
   expo: {
     id: 'expo',
     name: 'Expo',
-    src: '/expo.svg',
+    src: 'tech/expo.svg',
     size: 'sm',
     techColor: 'next',
     bgColor: 'whiteLogo',
@@ -119,7 +119,7 @@ export const techs = {
   qwik: {
     id: 'qwik',
     name: 'Qwik',
-    src: '/qwik.svg',
+    src: 'tech/qwik.svg',
     size: 'sm',
     techColor: 'qwik',
     bgColor: 'purpleLogo',
@@ -127,7 +127,7 @@ export const techs = {
   react: {
     id: 'react',
     name: 'React',
-    src: '/react.svg',
+    src: 'tech/react.svg',
     size: 'lg',
     techColor: 'react',
     bgColor: 'blueLogo',
@@ -135,7 +135,7 @@ export const techs = {
   jest: {
     id: 'jest',
     name: 'Jest',
-    src: '/jest.svg',
+    src: 'tech/jest.svg',
     size: 'sm',
     techColor: 'jest',
     bgColor: 'pinkLogo',
@@ -143,7 +143,7 @@ export const techs = {
   vitest: {
     id: 'vitest',
     name: 'Vitest',
-    src: '/vitest.svg',
+    src: 'tech/vitest.svg',
     size: 'sm',
     techColor: 'vitest',
     bgColor: 'greenLogo',
@@ -151,7 +151,7 @@ export const techs = {
   typescript: {
     id: 'typescript',
     name: 'Typescript',
-    src: '/typescript.svg',
+    src: 'tech/typescript.svg',
     size: 'md',
     techColor: 'typescript',
     bgColor: 'blueLogo',
@@ -159,7 +159,7 @@ export const techs = {
   nodejs: {
     id: 'nodejs',
     name: 'NodeJS',
-    src: '/nodejs-icon.svg',
+    src: 'tech/nodejs-icon.svg',
     size: 'md',
     techColor: 'node',
     bgColor: 'greenLogo',
@@ -167,7 +167,7 @@ export const techs = {
   redis: {
     id: 'redis',
     name: 'Redis',
-    src: '/redis.svg',
+    src: 'tech/redis.svg',
     size: 'sm',
     techColor: 'redis',
     bgColor: 'redLogo',
@@ -175,7 +175,7 @@ export const techs = {
   sequelize: {
     id: 'sequelize',
     name: 'Sequelize',
-    src: '/sequelize.svg',
+    src: 'tech/sequelize.svg',
     size: 'sm',
     techColor: 'sequelize',
     bgColor: 'blueLogo',
@@ -183,7 +183,7 @@ export const techs = {
   socketio: {
     id: 'socketio',
     name: 'Socket.io',
-    src: '/socketdotio.svg',
+    src: 'tech/socketdotio.svg',
     size: 'sm',
     techColor: 'next',
     bgColor: 'whiteLogo',
@@ -191,7 +191,7 @@ export const techs = {
   prisma: {
     id: 'prisma',
     name: 'Prisma',
-    src: '/prisma.svg',
+    src: 'tech/prisma.svg',
     size: 'md',
     techColor: 'prisma',
     bgColor: 'blueLogo',
@@ -199,7 +199,7 @@ export const techs = {
   reactNative: {
     id: 'reactNative',
     name: 'React Native',
-    src: '/react-native.svg',
+    src: 'tech/react-native.svg',
     size: 'md',
     techColor: 'react',
     bgColor: 'blueLogo',
@@ -207,7 +207,7 @@ export const techs = {
   nextJs: {
     id: 'nextJs',
     name: 'Next.js',
-    src: '/next-js.svg',
+    src: 'tech/next-js.svg',
     size: 'lg',
     techColor: 'next',
     bgColor: 'whiteLogo',
@@ -215,7 +215,7 @@ export const techs = {
   radixui: {
     id: 'radixui',
     name: 'Radix UI',
-    src: '/radix-ui.svg',
+    src: 'tech/radix-ui.svg',
     size: 'md',
     techColor: 'radix',
     bgColor: 'whiteLogo',
@@ -223,7 +223,7 @@ export const techs = {
   stitches: {
     id: 'stitches',
     name: 'Stitches',
-    src: '/stitches.svg',
+    src: 'tech/stitches.svg',
     size: 'sm',
     techColor: 'radix',
     bgColor: 'whiteLogo',
@@ -231,7 +231,7 @@ export const techs = {
   figma: {
     id: 'figma',
     name: 'Figma',
-    src: '/figma.svg',
+    src: 'tech/figma.svg',
     size: 'sm',
     techColor: 'figma',
     bgColor: 'redLogo',
@@ -239,7 +239,7 @@ export const techs = {
   reactQuery: {
     id: 'reactQuery',
     name: 'React Query',
-    src: '/reactquery.svg',
+    src: 'tech/reactquery.svg',
     size: 'sm',
     techColor: 'reactQuery',
     bgColor: 'redLogo',
@@ -247,7 +247,7 @@ export const techs = {
   graphql: {
     id: 'graphql',
     name: 'Graphql',
-    src: '/graphql.svg',
+    src: 'tech/graphql.svg',
     size: 'sm',
     techColor: 'graphql',
     bgColor: 'pinkLogo',
@@ -255,7 +255,7 @@ export const techs = {
   novu: {
     id: 'novu',
     name: 'Novu',
-    src: '/novu.svg',
+    src: 'tech/novu.svg',
     size: 'sm',
     techColor: 'novu',
     bgColor: 'redLogo',
@@ -263,7 +263,7 @@ export const techs = {
   postgresql: {
     id: 'postgresql',
     name: 'Postgres',
-    src: '/postgresql.svg',
+    src: 'tech/postgresql.svg',
     size: 'md',
     techColor: 'postgres',
     bgColor: 'blueLogo',
@@ -271,7 +271,7 @@ export const techs = {
   firebase: {
     id: 'firebase',
     name: 'Firebase',
-    src: '/firebase.svg',
+    src: 'tech/firebase.svg',
     size: 'sm',
     techColor: 'firebase',
     bgColor: 'yellowLogo',
@@ -279,7 +279,7 @@ export const techs = {
   docker: {
     id: 'docker',
     name: 'Docker',
-    src: '/docker.svg',
+    src: 'tech/docker.svg',
     size: 'sm',
     techColor: 'docker',
     bgColor: 'blueLogo',
@@ -287,7 +287,7 @@ export const techs = {
   kafka: {
     id: 'kafka',
     name: 'Apache Kafka',
-    src: '/apachekafka.svg',
+    src: 'tech/apachekafka.svg',
     size: 'sm',
     techColor: 'next',
     bgColor: 'whiteLogo',

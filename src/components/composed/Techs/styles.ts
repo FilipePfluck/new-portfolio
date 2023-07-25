@@ -95,7 +95,7 @@ export const Text = styled(
     base: {
       textStyle: 'bodyMd',
       color: 'slate.11',
-      maxW: { base: '480px', lg: '670px' },
+      maxW: { base: '480px', lg: '600px' },
       mx: 'auto',
     },
   }),

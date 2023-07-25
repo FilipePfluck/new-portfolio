@@ -133,11 +133,8 @@ export const Job = styled(
   'strong',
   cva({
     base: {
-      fontSize: { base: 'lg', md: '4xl' },
+      textStyle: 'heading2',
       color: 'slate.11',
-      fontWeight: '700',
-      fontFamily: 'robotoMono',
-      lineHeight: '100%',
       whiteSpace: 'nowrap',
       overflow: 'hidden',
       willChange: 'width',
@@ -152,10 +149,8 @@ export const Description = styled(
   'p',
   cva({
     base: {
-      fontSize: { base: 'md', md: 'lg' },
+      textStyle: 'bodyLg',
       color: 'slate.12',
-      fontFamily: 'inter',
-      lineHeight: '120%',
       maxW: '544px',
       zIndex: '2',
     },

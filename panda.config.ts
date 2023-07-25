@@ -1,4 +1,9 @@
-import { defineConfig, defineGlobalStyles, defineTokens } from '@pandacss/dev'
+import {
+  defineConfig,
+  defineGlobalStyles,
+  defineTextStyles,
+  defineTokens,
+} from '@pandacss/dev'
 import { slateDark, greenDark, blackA } from '@radix-ui/colors'
 import { preset } from '@pandacss/preset-panda'
 
@@ -96,6 +101,62 @@ const tokens = defineTokens({
   },
 })
 
+const textStyles = defineTextStyles({
+  heading1: {
+    value: {
+      fontSize: { base: '2xl', md: '6xl' },
+      fontWeight: '700',
+      fontFamily: 'robotoMono',
+      lineHeight: '100%',
+    },
+  },
+  heading2: {
+    value: {
+      fontSize: { base: 'lg', md: '4xl' },
+      fontWeight: '700',
+      fontFamily: 'robotoMono',
+      lineHeight: '100%',
+    },
+  },
+  heading3: {
+    value: {
+      fontSize: { base: 'lg', md: '3xl' },
+      fontWeight: '700',
+      fontFamily: 'robotoMono',
+      lineHeight: '100%',
+    },
+  },
+  heading4: {
+    value: {
+      fontSize: { base: 'md', lg: 'xl' },
+      fontWeight: '500',
+      fontFamily: 'inter',
+      lineHeight: '120%',
+    },
+  },
+  bodyLg: {
+    value: {
+      fontSize: { base: 'md', lg: 'lg' },
+      fontFamily: 'inter',
+      lineHeight: '150%',
+    },
+  },
+  bodyMd: {
+    value: {
+      fontSize: { base: 'sm', lg: 'md' },
+      fontFamily: 'inter',
+      lineHeight: '150%',
+    },
+  },
+  bodySm: {
+    value: {
+      fontSize: { base: 'xs', lg: 'sm' },
+      fontFamily: 'inter',
+      lineHeight: '150%',
+    },
+  },
+})
+
 export default defineConfig({
   preflight: true,
 
@@ -106,6 +167,7 @@ export default defineConfig({
   theme: {
     tokens,
     extend: {
+      textStyles,
       keyframes: {
         typewritter: {
           '0%': { width: '0px' },

@@ -92,9 +92,8 @@ export const SkillName = styled(
   'strong',
   cva({
     base: {
-      fontSize: { base: 'md', lg: 'xl' },
       color: 'slate.12',
-      fontWeight: 500,
+      textStyle: 'heading4',
     },
   }),
 )
@@ -103,9 +102,8 @@ export const SkillDescription = styled(
   'p',
   cva({
     base: {
-      fontSize: { base: 'sm', lg: 'md' },
+      textStyle: 'bodyMd',
       color: 'slate.11',
-      fontFamily: 'inter',
       maxW: '520px',
     },
   }),

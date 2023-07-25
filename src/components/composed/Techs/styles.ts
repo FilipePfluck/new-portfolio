@@ -93,9 +93,8 @@ export const Text = styled(
   'p',
   cva({
     base: {
-      fontSize: 'md',
+      textStyle: 'bodyMd',
       color: 'slate.11',
-      fontFamily: 'inter',
       maxW: { base: '480px', lg: '670px' },
       mx: 'auto',
     },

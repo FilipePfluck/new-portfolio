@@ -247,9 +247,8 @@ export const DialogDescription = styled(
   Dialog.Description,
   cva({
     base: {
-      fontSize: 'md',
-      color: 'slate.11',
-      fontFamily: 'inter',
+      textStyle: 'bodyMd',
+      color: 'slate.12',
     },
   }),
 )

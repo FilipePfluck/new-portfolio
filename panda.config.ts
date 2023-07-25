@@ -328,6 +328,21 @@ export default defineConfig({
       cursor: 'pointer',
       ring: '2px',
     },
+    '::-webkit-scrollbar': {
+      width: '16px',
+    },
+
+    '::-webkit-scrollbar-track': {
+      bg: 'slate.3',
+    },
+
+    '::-webkit-scrollbar-thumb': {
+      bg: 'slate.6',
+      transition: '0.2s',
+      '&:hover': {
+        bg: 'slate.7',
+      },
+    },
   }),
 
   // The output directory for your css system

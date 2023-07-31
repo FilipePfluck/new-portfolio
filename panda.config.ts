@@ -20,8 +20,10 @@ const tokens = defineTokens({
     typewritter2: { value: '2.6s typewritter2 steps(13)' },
     typeWritterMobile: { value: '1.3s typewritterMobile steps(13)' },
     typewritter2Mobile: { value: '2.6s typewritter2Mobile steps(13)' },
-    fadeIn: { value: '0.4s fadeIn' },
-    fadeOut: { value: '0.4s fadeOut' },
+    fadeIn: { value: '0.8s fadeIn' },
+    fadeOut: { value: '0.8s fadeOut' },
+    slideDown: { value: 'slideDown 0.4s ease-out' },
+    slideUp: { value: 'slideUp 0.4s ease-out' },
   },
   colors: {
     slate: {
@@ -195,6 +197,22 @@ export default defineConfig({
           '0%': { opacity: '1' },
           '100%': { opacity: '0' },
         },
+        slideDown: {
+          '0%': {
+            height: '0px',
+          },
+          '100%': {
+            height: 'var(--radix-collapsible-content-height);',
+          },
+        },
+        slideUp: {
+          '0%': {
+            height: 'var(--radix-collapsible-content-height);',
+          },
+          '100%': {
+            height: '0px',
+          },
+        },
       },
     },
   },
@@ -326,6 +344,9 @@ export default defineConfig({
   globalCss: defineGlobalStyles({
     button: {
       cursor: 'pointer',
+      ring: '2px',
+    },
+    a: {
       ring: '2px',
     },
     '::-webkit-scrollbar': {

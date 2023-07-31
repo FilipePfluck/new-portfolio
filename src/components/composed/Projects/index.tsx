@@ -20,6 +20,7 @@ import {
 import * as S from './styles'
 import { CollapsibleProjects, VisibleProjects } from './data'
 import { Flex } from '@/styled-system/jsx'
+import { css } from '@/styled-system/css'
 
 const ProjectsSection = () => {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -135,27 +136,30 @@ const ProjectsSection = () => {
         </S.IconContainer>
         <SectionSubTitle>Youtube</SectionSubTitle>
       </S.ProjectHeader>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor
-      debitis modi magni sit ex, possimus consequatur nisi quasi placeat, illum
-      quam dolores qui! Consectetur impedit fugiat minima adipisci perferendis.
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, vel vero
-      et ullam, quaerat tempore esse maiores accusamus assumenda ea rerum quis
-      ut. Modi, non deleniti! Dolorum non error fuga. Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Saepe consectetur a, pariatur iure illo
-      laboriosam accusamus cupiditate, aspernatur autem neque cumque
-      voluptatibus soluta quibusdam eius enim voluptatum nostrum expedita
-      laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Praesentium impedit autem ipsam nam nesciunt odit quia atque numquam ut
-      voluptatibus. Doloremque ratione illum dicta, reiciendis maxime eaque
-      deserunt magnam at. Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Cupiditate saepe aspernatur dolor rem dolore error impedit quaerat,
-      eveniet nisi sit autem, quis perspiciatis accusantium repudiandae minima
-      officia aperiam nobis maiores. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Facere dolor debitis modi magni sit ex, possimus
-      consequatur nisi quasi placeat, illum quam dolores qui! Consectetur
-      impedit fugiat minima adipisci perferendis. Lorem ipsum dolor sit, amet
-      consectetur adipisicing elit. Autem, vel vero et ullam, quaerat tempore
-      esse maiores accusamus assumenda ea rerum quis ut. Modi, non deleniti!
+      <p className={css({ color: 'slate.11' })}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor
+        debitis modi magni sit ex, possimus consequatur nisi quasi placeat,
+        illum quam dolores qui! Consectetur impedit fugiat minima adipisci
+        perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Autem, vel vero et ullam, quaerat tempore esse maiores accusamus
+        assumenda ea rerum quis ut. Modi, non deleniti! Dolorum non error fuga.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        consectetur a, pariatur iure illo laboriosam accusamus cupiditate,
+        aspernatur autem neque cumque voluptatibus soluta quibusdam eius enim
+        voluptatum nostrum expedita laborum. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Praesentium impedit autem ipsam nam
+        nesciunt odit quia atque numquam ut voluptatibus. Doloremque ratione
+        illum dicta, reiciendis maxime eaque deserunt magnam at. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Cupiditate saepe aspernatur
+        dolor rem dolore error impedit quaerat, eveniet nisi sit autem, quis
+        perspiciatis accusantium repudiandae minima officia aperiam nobis
+        maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+        dolor debitis modi magni sit ex, possimus consequatur nisi quasi
+        placeat, illum quam dolores qui! Consectetur impedit fugiat minima
+        adipisci perferendis. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Autem, vel vero et ullam, quaerat tempore esse maiores
+        accusamus assumenda ea rerum quis ut. Modi, non deleniti!
+      </p>
       <S.ProjectHeader>
         <S.IconContainer>
           <Article />
@@ -163,27 +167,30 @@ const ProjectsSection = () => {
 
         <SectionSubTitle>Articles</SectionSubTitle>
       </S.ProjectHeader>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor
-      debitis modi magni sit ex, possimus consequatur nisi quasi placeat, illum
-      quam dolores qui! Consectetur impedit fugiat minima adipisci perferendis.
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, vel vero
-      et ullam, quaerat tempore esse maiores accusamus assumenda ea rerum quis
-      ut. Modi, non deleniti! Dolorum non error fuga. Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Saepe consectetur a, pariatur iure illo
-      laboriosam accusamus cupiditate, aspernatur autem neque cumque
-      voluptatibus soluta quibusdam eius enim voluptatum nostrum expedita
-      laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Praesentium impedit autem ipsam nam nesciunt odit quia atque numquam ut
-      voluptatibus. Doloremque ratione illum dicta, reiciendis maxime eaque
-      deserunt magnam at. Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Cupiditate saepe aspernatur dolor rem dolore error impedit quaerat,
-      eveniet nisi sit autem, quis perspiciatis accusantium repudiandae minima
-      officia aperiam nobis maiores. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Facere dolor debitis modi magni sit ex, possimus
-      consequatur nisi quasi placeat, illum quam dolores qui! Consectetur
-      impedit fugiat minima adipisci perferendis. Lorem ipsum dolor sit, amet
-      consectetur adipisicing elit. Autem, vel vero et ullam, quaerat tempore
-      esse maiores accusamus assumenda ea rerum quis ut. Modi, non deleniti!
+      <p className={css({ color: 'slate.11' })}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor
+        debitis modi magni sit ex, possimus consequatur nisi quasi placeat,
+        illum quam dolores qui! Consectetur impedit fugiat minima adipisci
+        perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Autem, vel vero et ullam, quaerat tempore esse maiores accusamus
+        assumenda ea rerum quis ut. Modi, non deleniti! Dolorum non error fuga.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        consectetur a, pariatur iure illo laboriosam accusamus cupiditate,
+        aspernatur autem neque cumque voluptatibus soluta quibusdam eius enim
+        voluptatum nostrum expedita laborum. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Praesentium impedit autem ipsam nam
+        nesciunt odit quia atque numquam ut voluptatibus. Doloremque ratione
+        illum dicta, reiciendis maxime eaque deserunt magnam at. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Cupiditate saepe aspernatur
+        dolor rem dolore error impedit quaerat, eveniet nisi sit autem, quis
+        perspiciatis accusantium repudiandae minima officia aperiam nobis
+        maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+        dolor debitis modi magni sit ex, possimus consequatur nisi quasi
+        placeat, illum quam dolores qui! Consectetur impedit fugiat minima
+        adipisci perferendis. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Autem, vel vero et ullam, quaerat tempore esse maiores
+        accusamus assumenda ea rerum quis ut. Modi, non deleniti!
+      </p>
     </Section>
   )
 }

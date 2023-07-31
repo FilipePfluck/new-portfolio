@@ -1,3 +1,4 @@
+import { EducationSection } from '@/components/composed/EducationSection'
 import { Hero } from '@/components/composed/Hero'
 import { Skills } from '@/components/composed/Skills'
 import { Techs } from '@/components/composed/Techs'
@@ -21,6 +22,7 @@ export default function Home() {
       <Techs />
       <WorkSection />
       <LazyProjectsSection />
+      <EducationSection />
     </main>
   )
 }

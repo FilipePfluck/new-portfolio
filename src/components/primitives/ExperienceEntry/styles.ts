@@ -1,8 +1,8 @@
 import { cva } from '@/styled-system/css'
 import { styled } from '@/styled-system/jsx'
 
-export const CompanyContainer = styled(
-  'div',
+export const Container = styled(
+  'article',
   cva({
     base: {
       w: 'full',
@@ -13,7 +13,7 @@ export const CompanyContainer = styled(
   }),
 )
 
-export const CompanyInfoContainer = styled(
+export const Content = styled(
   'div',
   cva({
     base: {
@@ -24,7 +24,7 @@ export const CompanyInfoContainer = styled(
   }),
 )
 
-export const CompanyInfoHeader = styled(
+export const Header = styled(
   'header',
   cva({
     base: {
@@ -35,7 +35,7 @@ export const CompanyInfoHeader = styled(
   }),
 )
 
-export const CompanyName = styled(
+export const Name = styled(
   'h3',
   cva({
     base: {
@@ -45,7 +45,7 @@ export const CompanyName = styled(
   }),
 )
 
-export const JobDuration = styled(
+export const Duration = styled(
   'p',
   cva({
     base: {
@@ -66,7 +66,7 @@ export const Description = styled(
   }),
 )
 
-export const EventHeading = styled(
+export const TopicHeading = styled(
   'div',
   cva({
     base: {
@@ -79,7 +79,7 @@ export const EventHeading = styled(
   }),
 )
 
-export const EventIndicator = styled(
+export const TopicIndicator = styled(
   'span',
   cva({
     base: {
@@ -88,7 +88,7 @@ export const EventIndicator = styled(
   }),
 )
 
-export const EventName = styled(
+export const TopicName = styled(
   'strong',
   cva({
     base: {
@@ -98,7 +98,7 @@ export const EventName = styled(
   }),
 )
 
-export const EventDescription = styled(
+export const TopicDescription = styled(
   Description,
   cva({
     base: {

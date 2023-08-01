@@ -13,6 +13,7 @@ interface GenericItem {
   name: string
   src: string
   techColor: TechColors
+  description?: string
 }
 
 type Items = {
@@ -70,7 +71,8 @@ export const AnimatedModal = <I extends Items>({
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.2, delay: 0.15 }}
                       >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        {items[selectedId].description ||
+                          `Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Dignissimos exercitationem, dolore, voluptatem
                         sit, fugiat itaque dolor eius quia aspernatur voluptas
                         eaque modi enim magni quidem tempora ea accusamus
@@ -78,7 +80,7 @@ export const AnimatedModal = <I extends Items>({
                         consectetur adipisicing elit. Dolorum laudantium autem
                         aut maiores repudiandae quae ullam ex asperiores
                         sapiente eum rem nemo numquam accusamus neque, velit
-                        fugit
+                        fugit`}
                       </motion.p>
                     </S.DialogDescription>
                   </Flex>

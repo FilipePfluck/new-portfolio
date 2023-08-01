@@ -1,25 +1,25 @@
-import { positions } from '@/utils/positions'
+// import { positions } from '@/utils/positions'
 import * as S from './styled'
-import { memo } from 'react'
-import { BinaryDigitColum } from './BinaryDigitColumn'
+/* import { memo } from 'react'
+import { BinaryDigitColum } from './BinaryDigitColumn' */
 import Image from 'next/image'
 
-const generateBinaryString = (length: number) => {
+/* const generateBinaryString = (length: number) => {
   let result = ''
   for (let i = 0; i < length; i++) {
     result += Math.floor(Math.random() * 2)
   }
   return result
-}
+} */
 
-const data = positions.map(() => {
+/* const data = positions.map(() => {
   const numberOfBytes = Math.random() < 0.5 ? 3 : 4
   const byte = generateBinaryString(numberOfBytes * 8)
   const delay = Math.random()
   return { byte, delay }
-})
+}) */
 
-const BinaryTextsComponent = () => {
+/* const BinaryTextsComponent = () => {
   return (
     <>
       {positions.map(({ left, top }, i) => {
@@ -35,16 +35,16 @@ const BinaryTextsComponent = () => {
       })}
     </>
   )
-}
+} */
 
 // this makes the component never rerender, and it is intended
-const BinaryTexts = memo(BinaryTextsComponent, () => true)
+// const BinaryTexts = memo(BinaryTextsComponent, () => true)
 
 export const Hero = () => {
   return (
     <S.Container>
       <S.Background aria-hidden>
-        <BinaryTexts />
+        {/* <BinaryTexts /> */}
         <S.Overlay />
       </S.Background>
       <S.Content>

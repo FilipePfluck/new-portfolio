@@ -24,6 +24,7 @@ const tokens = defineTokens({
     fadeOut: { value: '0.8s fadeOut' },
     slideDown: { value: 'slideDown 0.4s ease-out' },
     slideUp: { value: 'slideUp 0.4s ease-out' },
+    revealText: { value: 'revealText 1.3s steps(13) forwards' },
   },
   colors: {
     slate: {
@@ -174,6 +175,11 @@ export default defineConfig({
         typewritter: {
           '0%': { width: '0px' },
           '100%': { width: '468px' },
+        },
+        revealText: {
+          '100%': {
+            clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+          },
         },
         typewritter2: {
           '0%': { width: '0px' },

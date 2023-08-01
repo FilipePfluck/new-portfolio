@@ -163,6 +163,6 @@ export const JobLetterClassname = cva({
     opacity: 0,
     animation: 'showLetter',
     // 1.3s = the time  it takes to finish the name animation
-    animationDelay: `calc(0.975s + ( 0.1s * var(--index) ))`,
+    animationDelay: `calc(0.975s + ( 0.075s * var(--index) ))`,
   },
 })

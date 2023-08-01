@@ -78,7 +78,7 @@ export const CodeProject = ({
                   target="_blank"
                   referrerPolicy="no-referrer"
                 >
-                  <FaGithub />
+                  <FaGithub aria-label="Github repository" />
                 </Link>
               </S.IconsContainer>
             </S.ProjectFooter>

@@ -124,7 +124,11 @@ const ProjectsSection = () => {
               ref={collapsibleTriggerRef}
               onClick={handleTriggerClick}
             >
-              {isExpanded ? <CaretUp /> : <CaretDown />}
+              {isExpanded ? (
+                <CaretUp aria-label="Show less projects" />
+              ) : (
+                <CaretDown aria-label="Show more projects" />
+              )}
             </S.CollapsibleButton>
             <S.CollapsibleDivider />
           </Flex>

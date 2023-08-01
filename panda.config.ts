@@ -22,7 +22,7 @@ const tokens = defineTokens({
     typewritter2Mobile: { value: '2.6s typewritter2Mobile steps(13)' },
     fadeIn: { value: '0.8s fadeIn' },
     fadeOut: { value: '0.8s fadeOut' },
-    showLetter: { value: '0.4s fadeIn forwards' },
+    showLetter: { value: '0s fadeIn forwards' },
     slideDown: { value: 'slideDown 0.4s ease-out' },
     slideUp: { value: 'slideUp 0.4s ease-out' },
   },

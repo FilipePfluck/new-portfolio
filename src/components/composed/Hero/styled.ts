@@ -121,10 +121,7 @@ export const Name = styled(
       fontWeight: '700',
       fontFamily: 'robotoMono',
       lineHeight: '100%',
-      whiteSpace: 'nowrap',
-      overflow: 'hidden',
-      willChange: 'width',
-      animation: { base: 'typeWritterMobile', md: 'typewritter' },
+      w: 'auto',
     },
   }),
 )
@@ -135,12 +132,7 @@ export const Job = styled(
     base: {
       textStyle: 'heading2',
       color: 'slate.11',
-      whiteSpace: 'nowrap',
-      overflow: 'hidden',
-      willChange: 'width',
-      animation: { base: 'typewritter2Mobile', md: 'typewritter2' },
-      w: 'auto',
-      display: 'flex',
+      w: 'max-content',
     },
   }),
 )
@@ -156,3 +148,21 @@ export const Description = styled(
     },
   }),
 )
+
+export const NameLetterClassname = cva({
+  base: {
+    opacity: 0,
+    animation: 'showLetter',
+    // TODO - figure out why this important is needed
+    animationDelay: `calc(0.1s * var(--index)) !important`,
+  },
+})
+
+export const JobLetterClassname = cva({
+  base: {
+    opacity: 0,
+    animation: 'showLetter',
+    // 1.3s = the time  it takes to finish the name animation
+    animationDelay: `calc(1.3s + ( 0.1s * var(--index) ))`,
+  },
+})

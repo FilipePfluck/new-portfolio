@@ -17,7 +17,7 @@ export const Background = styled(
   'div',
   cva({
     base: {
-      bgImage: 'url("/bg-4.jpg")',
+      bgImage: 'url("/bg.jpg")',
       bgPosition: 'center',
       bgRepeat: 'no-repeat',
       bgSize: 'cover',

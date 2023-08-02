@@ -1,6 +1,4 @@
-import { motion } from 'framer-motion'
 import { cva } from '../../../../styled-system/css'
-import { styled } from '../../../../styled-system/jsx'
 
 export const techStyles = cva({
   base: {
@@ -16,16 +14,34 @@ export const techStyles = cva({
   variants: {
     size: {
       sm: {
-        h: { base: '32px', lg: '64px' },
-        w: { base: '32px', lg: '64px' },
+        h: {
+          base: '96px',
+          lg: '64px',
+        },
+        w: {
+          base: '96px',
+          lg: '64px',
+        },
       },
       md: {
-        h: { base: '72px', lg: '136px' },
-        w: { base: '72px', lg: '136px' },
+        h: {
+          base: '200px',
+          lg: '136px',
+        },
+        w: {
+          base: '200px',
+          lg: '136px',
+        },
       },
       lg: {
-        h: { base: '112px', lg: '208px' },
-        w: { base: '112px', lg: '208px' },
+        h: {
+          base: '304px',
+          lg: '208px',
+        },
+        w: {
+          base: '304px',
+          lg: '208px',
+        },
       },
     },
     tech: {
@@ -188,45 +204,17 @@ export const imageStyles = cva({
   variants: {
     size: {
       sm: {
-        h: { base: '16px', lg: '32px' },
-        w: { base: '16px', lg: '32px' },
+        h: '32px',
+        w: '32px',
       },
       md: {
-        h: { base: '32px', lg: '64px' },
-        w: { base: '32px', lg: '64px' },
+        h: '64px',
+        w: '64px',
       },
       lg: {
-        h: { base: '64px', lg: '128px' },
-        w: { base: '64px', lg: '128px' },
+        h: '128px',
+        w: '128px',
       },
     },
   },
 })
-
-export const Image = styled(
-  motion.img,
-  cva({
-    base: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      position: 'relative',
-    },
-    variants: {
-      size: {
-        sm: {
-          h: { base: '16px', lg: '32px' },
-          w: { base: '16px', lg: '32px' },
-        },
-        md: {
-          h: { base: '32px', lg: '64px' },
-          w: { base: '32px', lg: '64px' },
-        },
-        lg: {
-          h: { base: '64px', lg: '128px' },
-          w: { base: '64px', lg: '128px' },
-        },
-      },
-    },
-  }),
-)

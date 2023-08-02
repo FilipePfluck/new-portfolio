@@ -16,6 +16,7 @@ import { useState } from 'react'
 import { AnimatedModal } from '@/components/primitives/AnimatedModal'
 
 import { techs } from './data'
+import { Flex } from '@/styled-system/jsx'
 
 export const Techs = () => {
   const [selectedTech, setSelectedTech] = useState<string | null>(null)
@@ -35,32 +36,42 @@ export const Techs = () => {
         <Overlay />
         {/* First line */}
         <MainLine>
-          <Tech data={techs.cva} onClick={() => setSelectedTech('cva')} />
-          <TechColumn mt="auto">
-            <Tech
-              data={techs.styledComponents}
-              onClick={() => setSelectedTech('styledComponents')}
-            />
-            <Tech
-              data={techs.framerMotion}
-              data-open={selectedTech === 'framerMotion'}
-              onClick={() => setSelectedTech('framerMotion')}
-            />
-          </TechColumn>
+          <Flex gap="2">
+            <Tech data={techs.cva} onClick={() => setSelectedTech('cva')} />
+            <TechColumn mt="auto" flexDirection={{ base: 'row', lg: 'column' }}>
+              <Tech
+                data={techs.styledComponents}
+                onClick={() => setSelectedTech('styledComponents')}
+              />
+              <Tech
+                data={techs.framerMotion}
+                data-open={selectedTech === 'framerMotion'}
+                onClick={() => setSelectedTech('framerMotion')}
+              />
+            </TechColumn>
+          </Flex>
 
-          <TechColumn>
-            <Tech
-              data={techs.reactHookForm}
-              onClick={() => setSelectedTech('reactHookForm')}
-            />
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
+            <Flex gap="2" flexDirection={{ base: 'column', lg: 'row' }}>
+              {/* TODO change this react hook form to something else */}
+              <Tech
+                data={techs.reactHookForm}
+                onClick={() => setSelectedTech('reactHookForm')}
+              />
+              <Tech
+                data={techs.reactHookForm}
+                onClick={() => setSelectedTech('reactHookForm')}
+              />
+            </Flex>
+
             <Tech
               data={techs.storybook}
               onClick={() => setSelectedTech('storybook')}
             />
           </TechColumn>
 
-          <TechColumn>
-            <TechLine>
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
+            <TechLine flexDirection={{ base: 'column', lg: 'row' }}>
               <Tech
                 data={techs.cypress}
                 onClick={() => setSelectedTech('cypress')}
@@ -81,7 +92,7 @@ export const Techs = () => {
         </MainLine>
         {/* Mid line */}
         <MainLine>
-          <TechColumn>
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
             <Tech
               data={techs.unocss}
               onClick={() => setSelectedTech('unocss')}
@@ -91,19 +102,19 @@ export const Techs = () => {
               onClick={() => setSelectedTech('pandacss')}
             />
           </TechColumn>
-          <TechColumn>
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
             <Tech
               data={techs.tailwindcss}
               onClick={() => setSelectedTech('tailwindcss')}
             />
-            <TechLine>
+            <TechLine flexDirection={{ base: 'column', lg: 'row' }}>
               <Tech data={techs.expo} onClick={() => setSelectedTech('expo')} />
               <Tech data={techs.qwik} onClick={() => setSelectedTech('qwik')} />
             </TechLine>
           </TechColumn>
           <Tech data={techs.react} onClick={() => setSelectedTech('react')} />
-          <TechColumn>
-            <TechLine>
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
+            <TechLine flexDirection={{ base: 'column', lg: 'row' }}>
               <Tech data={techs.jest} onClick={() => setSelectedTech('jest')} />
               <Tech
                 data={techs.vitest}
@@ -115,12 +126,12 @@ export const Techs = () => {
               onClick={() => setSelectedTech('typescript')}
             />
           </TechColumn>
-          <TechColumn>
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
             <Tech
               data={techs.nodejs}
               onClick={() => setSelectedTech('nodejs')}
             />
-            <TechLine>
+            <TechLine flexDirection={{ base: 'column', lg: 'row' }}>
               <Tech
                 data={techs.redis}
                 onClick={() => setSelectedTech('redis')}

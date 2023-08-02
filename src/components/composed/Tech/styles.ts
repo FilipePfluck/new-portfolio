@@ -204,16 +204,16 @@ export const imageStyles = cva({
   variants: {
     size: {
       sm: {
-        h: '32px',
-        w: '32px',
+        h: { base: '40px', lg: '32px' },
+        w: { base: '40px', lg: '32px' },
       },
       md: {
-        h: '64px',
-        w: '64px',
+        h: { base: '80px', lg: '64px' },
+        w: { base: '80px', lg: '64px' },
       },
       lg: {
-        h: '128px',
-        w: '128px',
+        h: { base: '160px', lg: '128px' },
+        w: { base: '160px', lg: '128px' },
       },
     },
   },

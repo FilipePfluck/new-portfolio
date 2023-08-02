@@ -144,7 +144,7 @@ export const Description = styled(
     base: {
       textStyle: 'bodyLg',
       color: 'slate.12',
-      maxW: '680px',
+      maxW: { base: '300px', lg: '680px' },
       zIndex: 3,
     },
   }),

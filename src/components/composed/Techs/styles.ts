@@ -19,7 +19,7 @@ export const Overlay = styled(
   cva({
     base: {
       position: 'absolute',
-      inset: '-60px',
+      inset: { base: '0px', xl: '-60px' },
       transition: '2s',
 
       bgImage:
@@ -74,6 +74,18 @@ export const TechLine = styled(
     base: {
       display: 'flex',
       gap: '2',
+    },
+  }),
+)
+
+export const MainLine = styled(
+  TechLine,
+  cva({
+    base: {
+      flexDir: {
+        base: 'column',
+        xl: 'row',
+      },
     },
   }),
 )

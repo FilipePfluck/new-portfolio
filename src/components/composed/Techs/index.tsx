@@ -4,7 +4,14 @@ import { Section } from '@/components/primitives/Section'
 import { SectionTitle } from '@/components/primitives/SectionTitle'
 import { Tech } from '@/components/composed/Tech'
 
-import { TechColumn, TechLine, Container, Text, Overlay } from './styles'
+import {
+  TechColumn,
+  TechLine,
+  Container,
+  Text,
+  Overlay,
+  MainLine,
+} from './styles'
 import { useState } from 'react'
 import { AnimatedModal } from '@/components/primitives/AnimatedModal'
 
@@ -27,7 +34,7 @@ export const Techs = () => {
       <Container className="group">
         <Overlay />
         {/* First line */}
-        <TechLine>
+        <MainLine>
           <Tech data={techs.cva} onClick={() => setSelectedTech('cva')} />
           <TechColumn mt="auto">
             <Tech
@@ -71,9 +78,9 @@ export const Techs = () => {
             data={techs.fastify}
             onClick={() => setSelectedTech('fastify')}
           />
-        </TechLine>
+        </MainLine>
         {/* Mid line */}
-        <TechLine>
+        <MainLine>
           <TechColumn>
             <Tech
               data={techs.unocss}
@@ -134,9 +141,9 @@ export const Techs = () => {
               onClick={() => setSelectedTech('prisma')}
             />
           </TechColumn>
-        </TechLine>
+        </MainLine>
         {/* Last line */}
-        <TechLine>
+        <MainLine>
           <Tech
             data={techs.reactNative}
             onClick={() => setSelectedTech('reactNative')}
@@ -193,7 +200,7 @@ export const Techs = () => {
               />
             </TechColumn>
           </TechLine>
-        </TechLine>
+        </MainLine>
       </Container>
       {selectedTech && (
         <AnimatedModal

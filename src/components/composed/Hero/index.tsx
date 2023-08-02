@@ -5,9 +5,7 @@ import Image from 'next/image'
 export const Hero = () => {
   return (
     <S.Container>
-      <S.Background aria-hidden>
-        <S.Overlay />
-      </S.Background>
+      <S.Background />
       <S.Content>
         <S.ProfileHeader>
           <S.ProfilePicture>

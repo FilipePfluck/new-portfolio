@@ -17,40 +17,20 @@ export const Background = styled(
   'div',
   cva({
     base: {
-      color: 'rgba(48, 164, 108, 0.085)',
+      bgImage: 'url("/bg-4.jpg")',
+      bgPosition: 'center',
+      bgRepeat: 'no-repeat',
+      bgSize: 'cover',
       position: 'absolute',
       inset: '0px',
       overflow: 'hidden',
+      _after: {
+        content: "''",
+        position: 'absolute',
+        inset: '0px',
+        bg: 'rgba(21,23,24, 0.5)',
+      },
       // zIndex: '-1',
-    },
-  }),
-)
-
-export const BinaryDigitsColumn = styled(
-  'p',
-  cva({
-    base: {
-      position: 'absolute',
-      fontSize: 'xs',
-      fontFamily: 'robotoMono',
-      writingMode: 'vertical-lr',
-      textOrientation: 'upright',
-      userSelect: 'none',
-      // zIndex: '-1',
-    },
-  }),
-)
-
-const overlayBg =
-  'radial-gradient(rgba(76, 195, 138, 0), rgba(76, 195, 138, 0), rgba(76, 195, 138, 0.03))'
-
-export const Overlay = styled(
-  'div',
-  cva({
-    base: {
-      position: 'absolute',
-      inset: '0px',
-      bgImage: overlayBg,
     },
   }),
 )
@@ -59,15 +39,14 @@ export const Content = styled(
   'div',
   cva({
     base: {
-      w: 'full',
-      maxW: '1032px',
+      w: 'max-content',
       mx: 'auto',
       px: '8',
-      py: '24',
+      py: '32',
       gap: { base: '4', md: '8' },
       display: 'flex',
       flexDir: 'column',
-      zIndex: '2',
+      zIndex: 3,
     },
   }),
 )
@@ -93,8 +72,7 @@ export const ProfileHeader = styled(
       gap: '8',
       alignItems: 'center',
       w: { base: 'auto', md: '640px' },
-      py: { base: '4', md: '8' },
-      zIndex: '2',
+      zIndex: 3,
       bgImage:
         'radial-gradient( rgba(76, 195, 138, 0.08), rgba(76, 195, 138, 0.0), rgba(76, 195, 138, 0.0))',
     },
@@ -117,11 +95,22 @@ export const Name = styled(
   cva({
     base: {
       fontSize: { base: '2xl', md: '6xl' },
+      position: 'relative',
       color: 'green.12',
       fontWeight: '700',
       fontFamily: 'robotoMono',
       lineHeight: '100%',
       w: 'auto',
+      _before: {
+        content: "''",
+        position: 'absolute',
+        bottom: 0,
+        height: '1em',
+        width: '1px',
+        bg: 'green.12',
+        ml: '1',
+        animation: 'blinkingTypewritterCursor',
+      },
     },
   }),
 )
@@ -131,8 +120,20 @@ export const Job = styled(
   cva({
     base: {
       textStyle: 'heading2',
+      position: 'relative',
       color: 'slate.11',
       w: 'max-content',
+      _before: {
+        content: "''",
+        position: 'absolute',
+        bottom: 0,
+        opacity: 0,
+        height: '1em',
+        width: '1px',
+        bg: 'green.12',
+        ml: '1',
+        animation: 'secondLineCursor',
+      },
     },
   }),
 )
@@ -143,8 +144,8 @@ export const Description = styled(
     base: {
       textStyle: 'bodyLg',
       color: 'slate.12',
-      maxW: '544px',
-      zIndex: '2',
+      maxW: '680px',
+      zIndex: 3,
     },
   }),
 )
@@ -162,7 +163,7 @@ export const JobLetterClassname = cva({
   base: {
     opacity: 0,
     animation: 'showLetter',
-    // 1.3s = the time  it takes to finish the name animation
-    animationDelay: `calc(0.975s + ( 0.075s * var(--index) ))`,
+    // 2.1516s = the time  it takes to finish the name animation
+    animationDelay: `calc(2.1516s + ( 0.075s * var(--index) ))`,
   },
 })

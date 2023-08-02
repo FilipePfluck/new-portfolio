@@ -16,15 +16,21 @@ const tokens = defineTokens({
   },
   animations: {
     ...preset.theme.tokens.animations,
-    typewritter: { value: '1.3s typewritter steps(13)' },
-    typewritter2: { value: '2.6s typewritter2 steps(13)' },
-    typeWritterMobile: { value: '1.3s typewritterMobile steps(13)' },
-    typewritter2Mobile: { value: '2.6s typewritter2Mobile steps(13)' },
     fadeIn: { value: '0.8s fadeIn' },
     fadeOut: { value: '0.8s fadeOut' },
     showLetter: { value: '0.2s fadeIn forwards' },
     slideDown: { value: 'slideDown 0.4s ease-out' },
     slideUp: { value: 'slideUp 0.4s ease-out' },
+    blink: { value: 'blink 0.5s infinite alternate' },
+    typewritterCursor: { value: 'typewritter 0.975s steps(13, end) forwards' },
+    blinkingTypewritterCursor: {
+      value:
+        'typewritter 0.975s steps(13, end) forwards, blink 0.5s infinite alternate 0.975s, fadeOut 0.1666s forwards 1.975s',
+    },
+    secondLineCursor: {
+      value:
+        'fadeIn 0.01s forwards 2.1416s, typewritter 0.975s steps(13, end) forwards 2.1516s, blink 0.5s infinite alternate 3.1516s',
+    },
   },
   colors: {
     slate: {
@@ -172,24 +178,6 @@ export default defineConfig({
     extend: {
       textStyles,
       keyframes: {
-        typewritter: {
-          '0%': { width: '0px' },
-          '100%': { width: '468px' },
-        },
-        typewritter2: {
-          '0%': { width: '0px' },
-          '50%': { width: '0px' },
-          '100%': { width: '280px' },
-        },
-        typewritterMobile: {
-          '0%': { width: '0px' },
-          '100%': { width: '188px' },
-        },
-        typewritter2Mobile: {
-          '0%': { width: '0px' },
-          '50%': { width: '0px' },
-          '100%': { width: '160px' },
-        },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
@@ -212,6 +200,19 @@ export default defineConfig({
           },
           '100%': {
             height: '0px',
+          },
+        },
+        blink: {
+          '0%': { opacity: 1 },
+          '50%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+        typewritter: {
+          '0%': {
+            transform: 'translateX(0ch)',
+          },
+          '100%': {
+            transform: 'translateX(13ch)',
           },
         },
       },

@@ -17,9 +17,16 @@ import { AnimatedModal } from '@/components/primitives/AnimatedModal'
 
 import { techs } from './data'
 import { Flex } from '@/styled-system/jsx'
+import { css } from '@/styled-system/css'
 
 export const Techs = () => {
   const [selectedTech, setSelectedTech] = useState<string | null>(null)
+
+  // This is just to tell panda to generate those 2 classes
+  css.raw({
+    hideFrom: 'lg',
+    hideBelow: 'lg',
+  })
 
   return (
     <Section>
@@ -55,8 +62,9 @@ export const Techs = () => {
             <Flex gap="2" flexDirection={{ base: 'column', lg: 'row' }}>
               {/* TODO change this react hook form to something else */}
               <Tech
-                data={techs.reactHookForm}
-                onClick={() => setSelectedTech('reactHookForm')}
+                data={techs.reactQueryMobile}
+                onClick={() => setSelectedTech('reactQuery')}
+                hideFrom="md"
               />
               <Tech
                 data={techs.reactHookForm}
@@ -84,11 +92,19 @@ export const Techs = () => {
             <Tech data={techs.git} onClick={() => setSelectedTech('git')} />
           </TechColumn>
 
-          <Tech data={techs.nest} onClick={() => setSelectedTech('nest')} />
-          <Tech
-            data={techs.fastify}
-            onClick={() => setSelectedTech('fastify')}
-          />
+          <Flex gap="2">
+            <Tech data={techs.nest} onClick={() => setSelectedTech('nest')} />
+            <TechColumn mt="auto">
+              <Tech
+                data={techs.graphqlMobile}
+                onClick={() => setSelectedTech('graphql')}
+              />
+              <Tech
+                data={techs.fastify}
+                onClick={() => setSelectedTech('fastify')}
+              />
+            </TechColumn>
+          </Flex>
         </MainLine>
         {/* Mid line */}
         <MainLine>
@@ -102,7 +118,10 @@ export const Techs = () => {
               onClick={() => setSelectedTech('pandacss')}
             />
           </TechColumn>
-          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
+          <TechColumn
+            flexDirection={{ base: 'row', lg: 'column' }}
+            mt={{ base: '-2', lg: '0' }}
+          >
             <Tech
               data={techs.tailwindcss}
               onClick={() => setSelectedTech('tailwindcss')}
@@ -142,11 +161,17 @@ export const Techs = () => {
               />
             </TechLine>
           </TechColumn>
-          <TechColumn>
-            <Tech
-              data={techs.socketio}
-              onClick={() => setSelectedTech('socketio')}
-            />
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
+            <TechLine flexDirection={{ base: 'column', lg: 'row' }}>
+              <Tech
+                data={techs.socketio}
+                onClick={() => setSelectedTech('socketio')}
+              />
+              <Tech
+                data={techs.novuMobile}
+                onClick={() => setSelectedTech('novu')}
+              />
+            </TechLine>
             <Tech
               data={techs.prisma}
               onClick={() => setSelectedTech('prisma')}
@@ -155,10 +180,23 @@ export const Techs = () => {
         </MainLine>
         {/* Last line */}
         <MainLine>
-          <Tech
-            data={techs.reactNative}
-            onClick={() => setSelectedTech('reactNative')}
-          />
+          <TechColumn flexDirection={{ base: 'row', lg: 'column' }}>
+            <Tech
+              data={techs.reactNative}
+              onClick={() => setSelectedTech('reactNative')}
+            />
+            <TechLine flexDirection={{ base: 'column', lg: 'row' }}>
+              <Tech
+                data={techs.pandacssMobile}
+                onClick={() => setSelectedTech('pandacss')}
+              />
+              <Tech
+                data={techs.unocssMobile}
+                onClick={() => setSelectedTech('unocss')}
+              />
+            </TechLine>
+          </TechColumn>
+
           <Tech data={techs.nextJs} onClick={() => setSelectedTech('nextJs')} />
           <TechColumn>
             <TechLine>
@@ -189,7 +227,7 @@ export const Techs = () => {
               <Tech data={techs.novu} onClick={() => setSelectedTech('novu')} />
             </TechLine>
           </TechColumn>
-          <TechLine>
+          <TechLine mt={{ base: '-2', lg: '0' }}>
             <TechColumn>
               <Tech
                 data={techs.postgresql}

@@ -130,7 +130,7 @@ export const Job = styled(
         opacity: 0,
         height: '1em',
         width: '1px',
-        bg: 'green.12',
+        bg: 'slate.11',
         ml: '1',
         animation: 'secondLineCursor',
       },

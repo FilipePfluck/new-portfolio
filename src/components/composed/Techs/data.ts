@@ -99,7 +99,7 @@ export const techs = {
     size: 'sm',
     techColor: 'next',
     bgColor: 'whiteLogo',
-    mt: 'auto',
+    // mt: 'auto',
     description:
       'Fastify is a highly performant NodeJS framework. It let you create routes for your APIs and validate the requests and responses. ',
   },
@@ -111,6 +111,18 @@ export const techs = {
     size: 'sm',
     techColor: 'unocss',
     bgColor: 'whiteLogo',
+    hideBelow: 'lg',
+    description:
+      'Uno CSS is a atomic CSS engine that generate css classnames on demand. It is fully customizable, lightweight, faster than tailwind and has features like aliasing, attribufy mode, variant groups and much more.',
+  },
+  unocssMobile: {
+    id: 'unocss',
+    name: 'Uno CSS',
+    src: 'tech/unocss.svg',
+    size: 'sm',
+    techColor: 'unocss',
+    bgColor: 'whiteLogo',
+    hideFrom: 'lg',
     description:
       'Uno CSS is a atomic CSS engine that generate css classnames on demand. It is fully customizable, lightweight, faster than tailwind and has features like aliasing, attribufy mode, variant groups and much more.',
   },
@@ -121,6 +133,18 @@ export const techs = {
     size: 'sm',
     techColor: 'panda',
     bgColor: 'yellowLogo',
+    hideBelow: 'lg',
+    description:
+      'Panda CSS is a styling library that has css-in-js syntax, but generate static CSS at build time. It is typesafe and has amazing developer experience.',
+  },
+  pandacssMobile: {
+    id: 'pandacss',
+    name: 'Panda CSS',
+    src: 'tech/pandacss.svg',
+    size: 'sm',
+    techColor: 'panda',
+    bgColor: 'yellowLogo',
+    hideFrom: 'lg',
     description:
       'Panda CSS is a styling library that has css-in-js syntax, but generate static CSS at build time. It is typesafe and has amazing developer experience.',
   },
@@ -301,8 +325,20 @@ export const techs = {
     size: 'sm',
     techColor: 'reactQuery',
     bgColor: 'redLogo',
+    hideBelow: 'lg',
     description:
       'React Query is a tool used in client side fetching in React applications. It keeps cache on the browser to avoid making multiple requests. The cache can be updated when the data is marked as stale. It is a really complete tool that helps building almost anything.',
+  },
+  reactQueryMobile: {
+    id: 'reactQuery',
+    name: 'React Query',
+    src: 'tech/reactquery.svg',
+    size: 'sm',
+    techColor: 'reactQuery',
+    bgColor: 'redLogo',
+    description:
+      'React Query is a tool used in client side fetching in React applications. It keeps cache on the browser to avoid making multiple requests. The cache can be updated when the data is marked as stale. It is a really complete tool that helps building almost anything.',
+    hideFrom: 'lg',
   },
   graphql: {
     id: 'graphql',
@@ -311,6 +347,18 @@ export const techs = {
     size: 'sm',
     techColor: 'graphql',
     bgColor: 'pinkLogo',
+    hideBelow: 'lg',
+    description:
+      'GraphQL is a query language, that is, a language used in the communication between APIs. It lets you fetch exactly what you need, withou overfetching or underfetching. ',
+  },
+  graphqlMobile: {
+    id: 'graphql',
+    name: 'Graphql',
+    src: 'tech/graphql.svg',
+    size: 'sm',
+    techColor: 'graphql',
+    bgColor: 'pinkLogo',
+    hideFrom: 'lg',
     description:
       'GraphQL is a query language, that is, a language used in the communication between APIs. It lets you fetch exactly what you need, withou overfetching or underfetching. ',
   },
@@ -321,6 +369,18 @@ export const techs = {
     size: 'sm',
     techColor: 'novu',
     bgColor: 'redLogo',
+    hideBelow: 'lg',
+    description:
+      'Novu is a open-source notification infrastructure for developers. It manages communication by email, SMS and push notifications. It has a digest engine that aggregates multiple events into a single notification, enables user preferences and much more.',
+  },
+  novuMobile: {
+    id: 'novu',
+    name: 'Novu',
+    src: 'tech/novu.svg',
+    size: 'sm',
+    techColor: 'novu',
+    bgColor: 'redLogo',
+    hideFrom: 'lg',
     description:
       'Novu is a open-source notification infrastructure for developers. It manages communication by email, SMS and push notifications. It has a digest engine that aggregates multiple events into a single notification, enables user preferences and much more.',
   },
@@ -363,5 +423,15 @@ export const techs = {
     bgColor: 'whiteLogo',
     description:
       'Kafka is a tool used to manage messages between microservices, and ensure that no data is lost if a service ever goes down. Different services can publish and subscribe to data on kafka. ',
+  },
+  dummy: {
+    id: 'dummy',
+    name: 'Dummy',
+    src: '',
+    size: 'sm',
+    techColor: 'next',
+    bgColor: 'whiteLogo',
+    description: '',
+    hideFrom: 'lg',
   },
 } as const

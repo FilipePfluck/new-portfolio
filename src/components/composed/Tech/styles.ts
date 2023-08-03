@@ -16,30 +16,36 @@ export const techStyles = cva({
       sm: {
         h: {
           base: '96px',
+          sm: '120px',
           lg: '64px',
         },
         w: {
           base: '96px',
+          sm: '120px',
           lg: '64px',
         },
       },
       md: {
         h: {
           base: '200px',
+          sm: '248px',
           lg: '136px',
         },
         w: {
           base: '200px',
+          sm: '248px',
           lg: '136px',
         },
       },
       lg: {
         h: {
           base: '304px',
+          sm: '376px',
           lg: '208px',
         },
         w: {
           base: '304px',
+          sm: '376px',
           lg: '208px',
         },
       },
